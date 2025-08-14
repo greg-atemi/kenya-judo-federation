@@ -1,0 +1,32 @@
+.HeroImage {
+  display: flex;
+  width: 100%;                     /* fill the full width */
+  height: 75vh;                    /* full viewport height */
+  background-image: url("judo.jpg");
+  background-repeat: no-repeat;     /* don't tile */
+  background-size: cover;           /* stretch to fill */
+  background-position: center;      /* keep image centered */
+  align-items: center;
+}
+
+.HeroImage p {
+  color: white;                  /* text color */
+  font-size: 3em;                  /* large text */
+  margin-left: 100px;
+  font-weight: bold;
+}
+
+/* Mobile/tablet adjustments */
+@media (max-width: 768px) {
+  .HeroImage {
+    height: 50vh;                   /* shorter height on smaller screens */
+    background-position: center;       /* focus top of image */
+  }
+  
+  .HeroImage p {
+    color: white;                  /* text color */
+    font-size: 1.5em;                  /* large text */
+    margin-left: 25px;
+    font-weight: normal;
+  }
+}
