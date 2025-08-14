@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Desktop navbar */
+ul.topnav {
+  list-style: none;
+  margin: 0;
+  padding: 12px 12px;
+  width: 100%;
+  background-color: #333;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+ul.topnav li {
+  float: none;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #04AA6D;
+}
+
+/* Logo stays left in desktop view */
+ul.topnav li.logo {
+  margin-right: auto;
+}
+
+.Logo-placeholder {
+  width: 200px;
+  height: 50px;
+  background-color: #61dafb;
+}
+
+/* ===== Mobile view ===== */
+@media (max-width: 768px) {
+  ul.topnav {
+    flex-direction: column;      /* stack vertically */
+    align-items: center;         /* center horizontally */
+    padding: 0;
+  }
+
+  ul.topnav li.logo {
+    margin: 0;                   /* remove auto margin */
+    display: flex;
+    justify-content: center;     /* center logo */
+    width: 100%;                 /* let it take full row width */
+  }
+
+  .Logo-placeholder {
+    margin: 0 auto;              /* center logo box itself */
+  }
+
+  ul.topnav li {
+    width: 100%;                 /* each menu item full width */
+  }
+
+  ul.topnav li a {
+    width: 100%;
+    text-align: center;          /* center text inside link */
+    padding: 14px 0;
+  }
+}
