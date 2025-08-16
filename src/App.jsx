@@ -1,5 +1,5 @@
-import Navbar from './components/Navbar.jsx'
-import HeroImage from './components/HeroImage.jsx'
+import Navbar from './components/jsx/Navbar.jsx'
+import HeroImage from './components/jsx/HeroImage.jsx'
 
 function App() {
 
