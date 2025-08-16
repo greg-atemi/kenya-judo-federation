@@ -19,13 +19,13 @@
 /* Mobile/tablet adjustments */
 @media (max-width: 768px) {
   .HeroImage {
-    height: 50vh;                   /* shorter height on smaller screens */
-    background-position: center;       /* focus top of image */
+    height: 50vh;                       /* shorter height on smaller screens */
+    background-position: center;        /* focus top of image */
   }
   
   .HeroImage p {
-    color: white;                  /* text color */
-    font-size: 1.5em;                  /* large text */
+    color: white;                     /* text color */
+    font-size: 1.5em;                   /* large text */
     margin-left: 25px;
     font-weight: normal;
   }

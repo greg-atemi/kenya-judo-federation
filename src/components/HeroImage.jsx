@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './HeroImage.css'
 
 function HeroImage() {
