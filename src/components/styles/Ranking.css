@@ -3,7 +3,44 @@ section {
     padding-right: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
+}
+
+section > h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.CategoryGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    column-gap: 5%;
+}
+
+.CategoryGroup > span{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.CategoryGroup > select {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #eee;
+    cursor: pointer;
+    appearance: none; /* Removes the dropdown arrow */
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none; /* For Firefox */
+    position: relative;
+}
 
 .RankingTable {
     width: 100%;

@@ -3,6 +3,15 @@ import '../styles/Ranking.css';
 function Ranking() {
     return (
         <section>
+            <h1>Ranking</h1>
+            <div className='CategoryGroup'>
+                <span>Category</span>
+                <select>
+                    <option value="senior">Senior</option>
+                    <option value="junior">Junior</option>
+                    <option value="cadet">Cadet</option>
+                </select>
+            </div>
             <div className="Ranking">
                 <table className="RankingTable">
                     <thead>
