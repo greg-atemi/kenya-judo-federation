@@ -1,4 +1,5 @@
 import Navbar from './components/jsx/Navbar.jsx'
+import Footer from './components/jsx/Footer.jsx'
 import Events from './components/jsx/Events.jsx'
 import Ranking from './components/jsx/Ranking.jsx'
 import HeroImage from './components/jsx/HeroImage.jsx'
@@ -11,6 +12,7 @@ function App() {
       <HeroImage />
       <Events />
       <Ranking />
+      <Footer />
     </>
   )
 }
