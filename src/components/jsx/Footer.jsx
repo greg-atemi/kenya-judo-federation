@@ -5,13 +5,17 @@ function Footer() {
         <footer className="Footer">
             <div className="FooterContent">
                 <div className="FooterSectionLeft">
-                    <div className="LogoPlaceholder"/>
+                    <div className="LogoPlaceholderContainer">
+                        <div className="LogoPlaceholder"/>
+                    </div>
                     <p>Kenya Judo Federation is dedicated to promoting Judo through discipline, respect, and excellence. Together, we nurture athletes and inspire future generations</p>
-                    <div className="SocialIcons">
-                        <span>f</span>
-                        <span>f</span>
-                        <span>f</span>
-                        <span>f</span>
+                    <div className="LogoPlaceholderContainer">
+                        <div className="SocialIcons">
+                            <span>f</span>
+                            <span>f</span>
+                            <span>f</span>
+                            <span>f</span>
+                        </div>
                     </div>
                 </div>
                 <div className="FooterSectionRight">
