@@ -2,7 +2,7 @@ import '../styles/Ranking.css';
 
 function Ranking() {
     return (
-        <section>
+        <section className='Section'>
             <h1>Ranking</h1>
             <div className='CategoryGroup'>
                 <span>Category</span>
@@ -16,11 +16,11 @@ function Ranking() {
                 <table className="RankingTable">
                     <thead>
                         <tr>
-                            <th>Rank</th>
-                            <th>Club</th>
-                            <th>Gold</th>
-                            <th>Silver</th>
-                            <th>Bronze</th>
+                            <th className="Neutral">#</th>
+                            <th className="Neutral">Club</th>
+                            <th className="Gold"></th>
+                            <th className="Silver"></th>
+                            <th className="Bronze"></th>
                         </tr>
                     </thead>
                     <tbody>
