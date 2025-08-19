@@ -1,11 +1,11 @@
-section {
+.Section {
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-h1{
+.Section > h1{
   font-size: 2em;
   color: #333;
   margin-bottom: 40px;
@@ -53,4 +53,39 @@ h1{
 .EventDate > p{
   margin-top: 4px;
   margin-bottom: 4px;
+}
+
+/* ===== Mobile view ===== */
+@media (max-width: 768px) {
+  .Section {
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .EventListGroup {
+    flex-direction: column; /* Stack event lists vertically */
+    align-items: center;
+    gap: 24px;
+  }
+
+  .EventList {
+    padding-top: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+  }
+
+  .Event {
+    row-gap: 16px; /* Add spacing between stacked items */
+  }
+
+  .Section > h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+  }
 }

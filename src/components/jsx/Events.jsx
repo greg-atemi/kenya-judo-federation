@@ -4,7 +4,7 @@ function Events() {
 
   return (
     <>
-      <section>
+      <section className='Section'>
         <h1>Upcoming Events</h1>
         <div className='EventListGroup'>
           <div>
