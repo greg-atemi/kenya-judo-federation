@@ -87,7 +87,7 @@
   }
 
   .EventTable {
-    display: block; /* Convert table to block layout */
+    display: flex; /* Convert table to block layout */
     width: 100%; /* Ensure full width */
   }
 
@@ -95,16 +95,21 @@
     display: none; /* Hide table headers */
   }
 
+  .EventTable tbody {
+    width: 100%; /* Ensure tbody takes full width */
+  }
+
   .EventTable tbody tr {
     display: flex; /* Stack rows vertically */
     flex-direction: column; /* Arrange cells in a column */
     border-bottom: 1px solid #ccc; /* Add border between rows */
-    margin-bottom: 16px; /* Add spacing between rows */
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
 
   .EventTable td {
     display: block; /* Make each cell a block element */
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
     font-size: 1em; /* Adjust font size */
     padding: 8px 0; /* Add vertical padding */
   }

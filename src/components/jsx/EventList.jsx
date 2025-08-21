@@ -51,22 +51,22 @@ function EventList() {
             </thead>
             <tbody>
               <tr>
-                <td data-label="Date">16-19 Jan</td>
-                <td data-label="Event">Kiambu National Championships 2025</td>
-                <td data-label="Category">Junior</td>
-                <td data-label="Time Ago">109 days ago</td>
+                <td>16-19 Jan</td>
+                <td>Kiambu National Championships 2025</td>
+                <td>Junior</td>
+                <td>109 days ago</td>
               </tr>
               <tr>
-                <td data-label="Date">16-19 Jan</td>
-                <td data-label="Event">Kiambu National Championships 2025</td>
-                <td data-label="Category">Junior</td>
-                <td data-label="Time Ago">109 days ago</td>
+                <td>16-19 Jan</td>
+                <td>Kiambu National Championships 2025</td>
+                <td>Junior</td>
+                <td>109 days ago</td>
               </tr>
               <tr>
-                <td data-label="Date">16-19 Jan</td>
-                <td data-label="Event">Kiambu National Championships 2025</td>
-                <td data-label="Category">Junior</td>
-                <td data-label="Time Ago">109 days ago</td>
+                <td>16-19 Jan</td>
+                <td>Kiambu National Championships 2025</td>
+                <td>Junior</td>
+                <td>109 days ago</td>
               </tr>
             </tbody>
           </table>
