@@ -4,10 +4,11 @@ function EventList() {
 
   return (
     <>
-      <div>
+      <div className='EventListContainer'>
         <div className='EventFilterGroup'>
           <div className='EventFilter'>
-            <p>Region</p>
+            <label>Region</label>
+            <br/>
             <select>
               <option value="select">Select Event</option>
               <option value="nairobi">Nairobi</option>
@@ -22,7 +23,8 @@ function EventList() {
           </div>
 
           <div className='EventFilter'>
-            <p>Year</p>
+            <label>Year</label>
+            <br/>
             <select>
               <option value="select">Select Year</option>
               <option value="2025">2025</option>
@@ -38,12 +40,36 @@ function EventList() {
         </div>
 
         <div className='EventContainer'>
-          <div>
-            <span>Kiambu National Championships 2025</span>
-            <span>Date: 23/08/2025</span>
-            <span>Location: Kiambu</span>
-            <span>Description: Annual athletics competition featuring top athletes from the region.</span>
-          </div>
+          <table className='EventTable'>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Category</th>
+                <th>Time Ago</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>16-19 Jan</td>
+                <td>Kiambu National Championships 2025</td>
+                <td>Junior</td>
+                <td>109 days ago</td>
+              </tr>
+              <tr>
+                <td>16-19 Jan</td>
+                <td>Kiambu National Championships 2025</td>
+                <td>Junior</td>
+                <td>109 days ago</td>
+              </tr>
+              <tr>
+                <td>16-19 Jan</td>
+                <td>Kiambu National Championships 2025</td>
+                <td>Junior</td>
+                <td>109 days ago</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </>
