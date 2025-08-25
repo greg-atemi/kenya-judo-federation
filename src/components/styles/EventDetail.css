@@ -1,0 +1,95 @@
+.EventDetailContainer{
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.EventCards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.EventCards > table{
+    border-collapse: collapse;
+    text-align: center;
+    border: #000 1px solid;
+    min-width: 320px;
+}
+
+.EventCards > table > thead{
+    border: #000 1px solid;
+    text-align: left;
+    padding: 8px;
+}
+
+.EventCards > table > thead > tr > th{
+    border: #000 1px solid;
+    text-align: left;
+    padding: 16px 32px;
+}
+
+.EventCards > table > tbody > tr > td{
+    text-align: left;
+    padding: 16px 32px;
+}
+
+.EventDetailSummary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.EventGallery {
+  text-align: center;
+}
+
+.GalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+.GalleryItem {
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  border: 1px solid #000; /* Border for each item */
+  background-color: #f4f4f4; /* Placeholder background */
+}
+
+@media (max-width: 768px) {
+    .EventDetailContainer{
+        padding: 32px;
+        margin: 0;
+        gap: 32px;
+    }
+    
+    .GalleryGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    .EventDetailSummary{
+        display: block;
+        text-align: center;
+    }
+
+    .EventCards{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .EventCards > table > thead > tr > th{
+        text-align: center;
+    }
+    
+    .EventCards > table > tbody > tr > td{
+        text-align: center;
+    }
+
+    .GalleryGrid{
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr); /* 3 columns */
+    }
+}

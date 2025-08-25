@@ -1,0 +1,68 @@
+.ClubsListContainer{
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ClubsListSearch select{
+    width: 20%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.ClubsListTable > div {
+    display: flex;
+    border-bottom: #000 1px solid;
+    padding: 32px 0;
+}
+
+.ClubsListTable > div > div {
+    flex: 1; /* makes each child take equal width */
+}
+
+.ClubsListTable > div > div:first-child {
+    text-align: left;
+}
+
+.ClubsListTable > div > div:nth-child(2) {
+    text-align: center;
+}
+
+.ClubsListTable > div > div:last-child {
+    text-align: right;
+}
+
+/* ===== Mobile view ===== */
+@media (max-width: 768px) {
+    .ClubsListContainer{
+        padding: 32px;
+        margin: 0;
+        gap: 32px;
+    }
+
+    .ClubsListSearch p{
+        text-align: center;
+    }
+
+    .ClubsListSearch select {
+        width: 100%;
+    }
+
+    .ClubsListTable > div {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 0;
+    }
+
+    .ClubsListTable > div > div:first-child {
+        text-align: center;
+    }
+
+    .ClubsListTable > div > div:last-child {
+        text-align: center;
+    }
+}
