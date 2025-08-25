@@ -5,6 +5,7 @@ import Ranking from './components/jsx/Ranking.jsx'
 import HeroImage from './components/jsx/HeroImage.jsx'
 import EventsList from './components/jsx/EventList.jsx'
 import EventDetail from './components/jsx/EventDetail.jsx'
+import ClubsList from './components/jsx/ClubsList.jsx'
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       <Events />
       <Ranking />
       <EventsList /> */}
-      <EventDetail />
+      {/* <EventDetail /> */}
+      <ClubsList/>
       <Footer />
     </>
   )
