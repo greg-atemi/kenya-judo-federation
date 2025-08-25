@@ -6,18 +6,20 @@ import HeroImage from './components/jsx/HeroImage.jsx'
 import EventsList from './components/jsx/EventList.jsx'
 import EventDetail from './components/jsx/EventDetail.jsx'
 import ClubsList from './components/jsx/ClubsList.jsx'
+import ClubDetail from './components/jsx/ClubDetail.jsx'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      {/* <HeroImage />
-      <Events />
-      <Ranking />
-      <EventsList /> */}
+      {/* <HeroImage /> */}
+      {/* <Events /> */}
+      {/* <Ranking /> */}
+      {/* <EventsList /> */}
       {/* <EventDetail /> */}
-      <ClubsList/>
+      {/* <ClubsList/> */}
+      <ClubDetail />
       <Footer />
     </>
   )
