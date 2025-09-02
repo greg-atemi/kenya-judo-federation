@@ -1,3 +1,4 @@
+import Fans from './components/jsx/Fans.jsx'
 import Navbar from './components/jsx/Navbar.jsx'
 import Footer from './components/jsx/Footer.jsx'
 import Events from './components/jsx/Events.jsx'
@@ -14,10 +15,11 @@ function App() {
   return (
     <>
       <Navbar />
+      <Fans />
       {/* <HeroImage /> */}
       {/* <Events /> */}
       {/* <Ranking /> */}
-      <RankingPage />
+      {/* <RankingPage /> */}
       {/* <EventsList /> */}
       {/* <EventDetail /> */}
       {/* <ClubsList/> */}
