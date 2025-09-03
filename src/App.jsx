@@ -1,4 +1,7 @@
 import Fans from './components/jsx/Fans.jsx'
+import KJFHistory from './components/jsx/KJFHistory.jsx'
+import WhoWeAre from './components/jsx/WhoWeAre.jsx'
+import JudoHistory from './components/jsx/JudoHistory.jsx'
 import Navbar from './components/jsx/Navbar.jsx'
 import Footer from './components/jsx/Footer.jsx'
 import Events from './components/jsx/Events.jsx'
@@ -15,7 +18,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Fans />
+      <WhoWeAre/>
+      {/* <JudoHistory /> */}
+      {/* <Fans /> */}
+      {/* <KJFHistory /> */}
       {/* <HeroImage /> */}
       {/* <Events /> */}
       {/* <Ranking /> */}
