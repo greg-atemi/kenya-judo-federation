@@ -9,14 +9,6 @@ function Footer() {
                         <div className="LogoPlaceholder"/>
                     </div>
                     <p>Kenya Judo Federation is dedicated to promoting Judo through discipline, respect, and excellence. Together, we nurture athletes and inspire future generations</p>
-                    <div className="LogoPlaceholderContainer">
-                        <div className="SocialIcons">
-                            <span>f</span>
-                            <span>f</span>
-                            <span>f</span>
-                            <span>f</span>
-                        </div>
-                    </div>
                 </div>
                 <div className="FooterSectionRight">
                     <div className="FooterSubSection">
@@ -36,8 +28,16 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="Copyright">
-                <p>2025 Soft-O Copyright - All Rights Reserved</p>
+            <div className="FooterBottom">
+                <div>
+                    <p className="Copyright">2025 Soft-O Copyright - All Rights Reserved</p>
+                </div>
+                <div className="SocialIcons">
+                    <span>f</span>
+                    <span>t</span>
+                    <span>X</span>
+                    <span>in</span>
+                </div>
             </div>
         </footer>
     );

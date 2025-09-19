@@ -79,9 +79,14 @@
 }
 
 .Copyright {
-    text-align: center;
     font-size: 14px;
     color: #666;
+}
+
+.FooterBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* ===== Mobile view ===== */
