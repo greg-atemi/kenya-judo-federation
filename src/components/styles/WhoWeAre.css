@@ -144,6 +144,11 @@ form > *:not(:first-child) {
         margin: 0;
     }
 
+    .fansPageContainer li {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
     .clubLeaderSection {
         gap: 40px;
         align-items: center;

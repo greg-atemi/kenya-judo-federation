@@ -1,6 +1,7 @@
 import Fans from './components/jsx/Fans.jsx'
 import KJFHistory from './components/jsx/KJFHistory.jsx'
 import WhoWeAre from './components/jsx/WhoWeAre.jsx'
+import OurLeadership from './components/jsx/OurLeadership.jsx'
 import JudoHistory from './components/jsx/JudoHistory.jsx'
 import Navbar from './components/jsx/Navbar.jsx'
 import Footer from './components/jsx/Footer.jsx'
@@ -18,7 +19,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <WhoWeAre/>
+      <OurLeadership/>
+      {/* <WhoWeAre/> */}
       {/* <JudoHistory /> */}
       {/* <Fans /> */}
       {/* <KJFHistory /> */}
