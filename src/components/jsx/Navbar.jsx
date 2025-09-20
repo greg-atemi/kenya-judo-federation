@@ -1,14 +1,27 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <>
-      <div>
-        <ul className="topnav">
-          <li className="logo">
-              <div className="Logo-placeholder"></div>
-          </li>
+      <div className="navbar">
+        <div className="logo">
+          <div className="Logo-placeholder"></div>
+        </div>
+
+        {/* Burger button */}
+        <div className={`burger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <ul className={`topnav ${isOpen ? "open" : ""}`}>
           <li>
             <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
               Home
@@ -57,7 +70,7 @@ function Navbar() {
         </ul>
       </div>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
