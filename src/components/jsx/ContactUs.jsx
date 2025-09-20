@@ -1,5 +1,4 @@
 import '../styles/ContactUs.css';
-import HeroImage from './HeroImage.jsx';
 
 function ContactUs() {
 

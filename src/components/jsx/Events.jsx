@@ -1,9 +1,11 @@
+import HeroImage from './HeroImage.jsx';
 import '../styles/Events.css';
 
 function Events() {
 
   return (
     <>
+      <HeroImage/>
       <section className='Section'>
         <h1>Upcoming Events</h1>
         <div className='EventListGroup'>
