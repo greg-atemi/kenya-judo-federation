@@ -10,10 +10,9 @@ body {
 ul.topnav {
   list-style: none;
   margin: 0;
-  padding: 12px 12px;
+  padding: 12px 24px;
   width: 100%;
-  background-color: #333;
-
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -26,18 +25,19 @@ ul.topnav li {
 }
 
 ul.topnav li a {
+  color: #000;
   display: block;
-  color: white;
-  text-decoration: none;
   padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
 ul.topnav li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #aaa;
 }
 
 ul.topnav li a.active {
-  background-color: #04AA6D;
+  background-color: #ccc;
 }
 
 /* Logo stays left in desktop view */
@@ -56,7 +56,7 @@ ul.topnav li.logo {
   ul.topnav {
     flex-direction: column;      /* stack vertically */
     align-items: center;         /* center horizontally */
-    padding: 0;
+    padding: 24px;
   }
 
   ul.topnav li.logo {
