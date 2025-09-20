@@ -1,0 +1,233 @@
+.ContactUsContainer {
+    background-color: #eee;
+}
+
+.ContactUsContainerTitle{
+    padding-top: 40px;
+}
+
+.ContactUsContainerTitle h3{
+    margin: 0;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.fansPageContainer {
+    max-width: 1200px;
+    /* margin: 40px auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.fansPageContainer h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.fansPageContainer p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.fansPageContainer .contactUs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fansPageContainer .contactUs p,
+.fansPageContainer .contactUs h3{
+    text-align: left;
+}
+
+.fansPageContainer .contactUs button{
+    padding: 16px 40px;
+    font-size: 2rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+    height: 20%;
+}
+
+.clubLeaderSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.clubLeaderInfo {
+    border: 1px solid #000;
+    padding: 20px 80px;
+}
+
+.contactUsFormContainer{
+    display: flex;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 64px;
+    width: auto;
+    /* max-width: 1200px; */
+    justify-content: center;
+}
+
+.contactUsFormContainer p{
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.contactUsFormContainer form > button{
+    padding: 16px 0;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #666666;
+    color: #fff;
+    margin-top: 32px;
+    border: transparent;
+}
+
+.fNameLastNameGroup > div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fNameLastNameGroup{
+    display: flex;
+    gap: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 24px;
+}
+
+.firstElementWrapper {
+    margin-bottom: 0;
+}
+
+.firstElementWrapper h3{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    /* font-size: 1.5em; */
+}
+
+form label {
+    font-size: 1.2em;
+}
+
+form input,textarea {
+    font-size: 1.2em;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.Normal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phoneInput {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+form > *:not(:first-child) {
+    margin-top: 16px; /* Adds spacing starting from the second element */
+}
+
+/* ===== Mobile view ===== */
+@media (max-width: 768px) {
+    .fansPageContainer{
+        padding: 32px 16px;
+        margin: 0;
+        gap: 16px;
+    }
+
+    .fansPageContainer h3 {
+        font-size: 1.5rem;
+    }
+
+    .fansPageContainer p {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .clubLeaderSection {
+        gap: 40px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .clubLeaderInfo {
+        border: 1px solid #000;
+        padding: 16px 40px;
+    }
+
+    .fansPageContainer .contactUs{
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .fansPageContainer .contactUs p,
+    .fansPageContainer .contactUs h3{
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+    .contactUsFormContainer {
+        flex-direction: column;
+        margin: 0;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .contactUsFormContainer h3{
+        margin: 0;
+        text-align: center;
+    }
+
+    .contactUsFormContainer p{
+        margin: 4;
+        text-align: center;
+    }
+
+    form {
+        padding: 24px;
+        border-radius: 16px;
+    }
+
+    .fNameLastNameGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    form input, textarea {
+        font-size: 1em;
+        border-radius: 4px;
+    }
+
+    .contactUsFormContainer form > button {
+        padding: 16px 0;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+}

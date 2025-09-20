@@ -13,13 +13,15 @@ import EventsList from './components/jsx/EventList.jsx'
 import EventDetail from './components/jsx/EventDetail.jsx'
 import ClubsList from './components/jsx/ClubsList.jsx'
 import ClubDetail from './components/jsx/ClubDetail.jsx'
+import ContactUs from './components/jsx/ContactUs.jsx'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <OurLeadership/>
+      <ContactUs />
+      {/* <OurLeadership/> */}
       {/* <WhoWeAre/> */}
       {/* <JudoHistory /> */}
       {/* <Fans /> */}
