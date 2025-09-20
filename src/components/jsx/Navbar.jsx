@@ -27,14 +27,46 @@ function Navbar() {
               Home
             </NavLink>
           </li>
-          <li><NavLink to="/events">Events</NavLink></li>
-          <li><NavLink to="/clubs">Clubs</NavLink></li>
-          <li><NavLink to="/fans">Fans</NavLink></li>
-          <li><NavLink to="/ranking">Ranking</NavLink></li>
-          <li><NavLink to="/kjf-history">KJF History</NavLink></li>
-          <li><NavLink to="/judo-history">Judo History</NavLink></li>
-          <li><NavLink to="/leadership">Our Leadership</NavLink></li>
-          <li><NavLink to="/contact">Contact Us</NavLink></li>
+          <li>
+            <NavLink to="/events" className={({ isActive }) => isActive ? "active" : ""}>
+              Events
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/clubs" className={({ isActive }) => isActive ? "active" : ""}>
+              Clubs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/fans" className={({ isActive }) => isActive ? "active" : ""}>
+              Fans
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/ranking" className={({ isActive }) => isActive ? "active" : ""}>
+              Ranking
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/kjf-history" className={({ isActive }) => isActive ? "active" : ""}>
+              KJF History
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/judo-history" className={({ isActive }) => isActive ? "active" : ""}>
+              Judo History
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/leadership" className={({ isActive }) => isActive ? "active" : ""}>
+              Our Leadership
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
+              Contact Us
+            </NavLink>
+          </li>
         </ul>
       </div>
     </>
