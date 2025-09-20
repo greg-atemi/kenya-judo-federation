@@ -58,6 +58,8 @@ ul.topnav li a.active {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  padding: 8px;          /* adds breathing room inside the clickable area */
+  box-sizing: content-box; /* prevents padding from shrinking bars */
 }
 
 .burger div {
@@ -70,27 +72,31 @@ ul.topnav li a.active {
 
 /* Animate burger to X */
 .burger.open div:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(4px, 10px);
+  width: 32px;
 }
 .burger.open div:nth-child(2) {
   opacity: 0;
 }
 .burger.open div:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(4px, -10px);
+  width: 32px;
 }
 
 /* ===== Mobile view ===== */
 @media (max-width: 768px) {
   .burger {
     display: flex;
+    /* margin-right: 16px; */
   }
 
   ul.topnav {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 0;
+    top: 74px;
+    left: 0;
+    box-sizing: border-box;
     width: 100%;
     background: #fff;
     padding: 24px;
