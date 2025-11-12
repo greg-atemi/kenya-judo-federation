@@ -43,7 +43,7 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/ranking" className={({ isActive }) => isActive ? "active" : ""}>
+            <NavLink to="/ranking-page" className={({ isActive }) => isActive ? "active" : ""}>
               Ranking
             </NavLink>
           </li>
