@@ -97,7 +97,7 @@ form label {
     font-size: 1.2em;
 }
 
-form input,textarea {
+form input,textarea,select {
     font-size: 1.2em;
     padding: 8px;
     border: 1px solid #000;

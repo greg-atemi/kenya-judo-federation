@@ -41,8 +41,12 @@ function Fans() {
             <div className='Normal'>
               <label for="phone">Phone Number</label>
               <div className='phoneInput'>
-                <input style={{ width: '25%' }} id="code" type="tel" />
-                <input style={{ width: '75%' }} id="phone" type="tel" />
+                <select style={{ width: '20%' }} id="code" type="tel" >
+                  <option value="+254">+254</option>
+                  <option value="+1">+1</option>
+                  <option value="+44">+44</option>
+                </select>
+                <input style={{ width: '80%' }} id="phone" type="tel" />
               </div>
             </div>
             <div className='Normal'>

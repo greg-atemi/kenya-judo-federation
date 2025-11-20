@@ -41,7 +41,6 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-radius: 16px;
-  /* max-width: 30%; */
 }
 
 .EventList > p {
@@ -59,7 +58,7 @@
   display: flex;
   column-gap: 32px;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .EventDate{
