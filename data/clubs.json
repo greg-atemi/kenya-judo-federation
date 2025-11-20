@@ -1,0 +1,27 @@
+[
+  {
+    "clubName": "Gitothua Judo Club",
+    "region": "Central",
+    "numberOfJudokas": 50
+  },
+  {
+    "clubName": "Ruiru Judo Club",
+    "region": "Eastern",
+    "numberOfJudokas": 40
+  },
+  {
+    "clubName": "Thika Judo Club",
+    "region": "Central",
+    "numberOfJudokas": 35
+  },
+  {
+    "clubName": "Nairobi Judo Club",
+    "region": "Nairobi",
+    "numberOfJudokas": 60
+  },
+  {
+    "clubName": "Mombasa Judo Club",
+    "region": "Coastal",
+    "numberOfJudokas": 45
+  }
+]

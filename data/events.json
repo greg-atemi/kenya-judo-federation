@@ -1,0 +1,80 @@
+{
+  "Seniors" : [
+    {
+      "date": "16-19 Jan 2025",
+      "event": "Kiambu National Championships 2025",
+      "category": "Seniors",
+      "time": "109 days ago"
+    },
+    {
+      "date": "20-22 Feb 2025",
+      "event": "Nairobi Open 2025",
+      "category": "Senior",
+      "time": "80 days ago"
+    },
+    {
+      "date": "10-12 Mar 2025",
+      "event": "Mombasa International 2025",
+      "category": "Seniors",
+      "time": "60 days ago"
+    },
+    {
+      "date": "5-7 Apr 2025",
+      "event": "Thika Regional 2025",
+      "category": "Seniors",
+      "time": "30 days ago"
+    }
+  ],
+  "Juniors" : [
+    {
+      "date": "16-19 Jan 2025",
+      "event": "Kitui National Championships 2025",
+      "category": "Juniors",
+      "time": "109 days ago"
+    },
+    {
+      "date": "20-22 Feb 2025",
+      "event": "Gitothua Open 2025",
+      "category": "Juniors",
+      "time": "80 days ago"
+    },
+    {
+      "date": "10-12 Mar 2025",
+      "event": "Mombasa International 2025",
+      "category": "Juniors",
+      "time": "60 days ago"
+    },
+    {
+      "date": "5-7 Apr 2025",
+      "event": "Thika Regional 2025",
+      "category": "Juniors",
+      "time": "30 days ago"
+    }
+  ],
+  "Cadets" : [
+    {
+      "date": "16-19 Jan 2025",
+      "event": "Kiambu National Championships 2025",
+      "category": "Cadets",
+      "time": "109 days ago"
+    },
+    {
+      "date": "20-22 Feb 2025",
+      "event": "Nairobi Open 2025",
+      "category": "Cadets",
+      "time": "80 days ago"
+    },
+    {
+      "date": "10-12 Mar 2025",
+      "event": "Mombasa International 2025",
+      "category": "Cadets",
+      "time": "60 days ago"
+    },
+    {
+      "date": "5-7 Apr 2025",
+      "event": "Thika Regional 2025",
+      "category": "Cadets",
+      "time": "30 days ago"
+    }
+  ]
+}

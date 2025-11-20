@@ -1,0 +1,113 @@
+{
+  "Cadet": [
+    {
+      "position": "1",
+      "club": "Gitothua Judo Club",
+      "Gold": 50,
+      "Silver": 50,
+      "Bronze": 50
+    },
+    {
+      "position": "2",
+      "club": "Ruiru Judo Club",
+      "Gold": 40,
+      "Silver": 40,
+      "Bronze": 40
+    },
+    {
+      "position": "3",
+      "club": "Thika Judo Club",
+      "Gold": 35,
+      "Silver": 35,
+      "Bronze": 35
+    },
+    {
+      "position": "4",
+      "club": "Nairobi Judo Club",
+      "Gold": 30,
+      "Silver": 30,
+      "Bronze": 30
+    },
+    {
+      "position": "5",
+      "club": "Mombasa Judo Club",
+      "Gold": 25,
+      "Silver": 25,
+      "Bronze": 25
+    }
+  ],
+  "Junior": [
+    {
+      "position": "1",
+      "club": "Mombasa Judo Club",
+      "Gold": 25,
+      "Silver": 25,
+      "Bronze": 25
+    },
+    {
+      "position": "2",
+      "club": "Ruiru Judo Club",
+      "Gold": 40,
+      "Silver": 40,
+      "Bronze": 40
+    },
+    {
+      "position": "3",
+      "club": "Thika Judo Club",
+      "Gold": 35,
+      "Silver": 35,
+      "Bronze": 35
+    },
+    {
+      "position": "4",
+      "club": "Nairobi Judo Club",
+      "Gold": 30,
+      "Silver": 30,
+      "Bronze": 30
+    },
+    {
+      "position": "5",
+      "club": "Mombasa Judo Club",
+      "Gold": 25,
+      "Silver": 25,
+      "Bronze": 25
+    }
+  ],
+  "Senior": [
+    {
+      "position": "1",
+      "club": "Mombasa Judo Club",
+      "Gold": 25,
+      "Silver": 25,
+      "Bronze": 25
+    },
+    {
+      "position": "2",
+      "club": "Ruiru Judo Club",
+      "Gold": 40,
+      "Silver": 40,
+      "Bronze": 40
+    },
+    {
+      "position": "3",
+      "club": "Thika Judo Club",
+      "Gold": 35,
+      "Silver": 35,
+      "Bronze": 35
+    },
+    {
+      "position": "4",
+      "club": "Nairobi Judo Club",
+      "Gold": 30,
+      "Silver": 30,
+      "Bronze": 30
+    },
+    {
+      "position": "5",
+      "club": "Mombasa Judo Club",
+      "Gold": 25,
+      "Silver": 25,
+      "Bronze": 25
+    }
+  ]
+}
