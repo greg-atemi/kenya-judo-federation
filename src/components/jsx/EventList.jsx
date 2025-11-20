@@ -19,7 +19,6 @@ function EventList() {
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)} // Update state on selection
             >
-              <option value="Select Category">Select Category</option>
               <option value="Seniors">Seniors</option>
               <option value="Juniors">Juniors</option>
               <option value="Cadets">Cadets</option>
@@ -35,9 +34,8 @@ function EventList() {
             <br />
             <select
               value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)} // Update state on selection
+              // onChange={(e) => setSelectedCategory(e.target.value)} // A future point of enhancement, currently Year filter is not functional
             >
-              <option value="Select Year">Select Year</option>
               <option value="2025">2025</option>
               <option value="2024">2024</option>
               <option value="2023">2023</option>
