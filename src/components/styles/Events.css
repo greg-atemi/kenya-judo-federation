@@ -26,11 +26,15 @@
 }
 
 .EventList{
-  border: 1px solid #000;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   padding-right: 64px;
   padding-left: 64px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 16px;
+  /* background-color: #61dafb; */
+  background-color: #fff;
 }
 
 .EventList > p {
@@ -38,10 +42,17 @@
   font-weight: bold;
 }
 
+.EventTitle{
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .Event{
   display: flex;
-  column-gap: 64px;
+  column-gap: 32px;
   align-items: center;
+  font-size: 1.2em;
 }
 
 .EventDate{

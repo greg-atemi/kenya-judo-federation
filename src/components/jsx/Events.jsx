@@ -1,5 +1,6 @@
 import HeroImage from './HeroImage.jsx';
 import '../styles/Events.css';
+import eventsData from '../../../data/events.json'; // Import the JSON file
 
 function Events() {
 
@@ -14,20 +15,18 @@ function Events() {
             <div className='EventList'>
               <div className='Event'>
                 <div className='EventDate'>
-                  <p>19</p>
-                  <p>JAN</p>
+                  <p>19 JAN</p>
                 </div>
                 <div className='EventName'>
-                  <p>Kiambu Champoinship</p>
+                  <p>Kiambu Championship</p>
                 </div>
               </div>
               <div className='Event'>
                 <div className='EventDate'>
-                  <p>19</p>
-                  <p>JAN</p>
+                  <p>19 JAN</p>
                 </div>
                 <div className='EventName'>
-                  <p>Kiambu Champoinship</p>
+                  <p>Kiambu Championship</p>
                 </div>
               </div>
             </div>
@@ -38,20 +37,18 @@ function Events() {
             <div className='EventList'>
               <div className='Event'>
                 <div className='EventDate'>
-                  <p>19</p>
-                  <p>JAN</p>
+                  <p>19 JAN</p>
                 </div>
                 <div className='EventName'>
-                  <p>Kiambu Champoinship</p>
+                  <p>Kiambu Championship</p>
                 </div>
               </div>
               <div className='Event'>
                 <div className='EventDate'>
-                  <p>19</p>
-                  <p>JAN</p>
+                  <p>19 JAN</p>
                 </div>
                 <div className='EventName'>
-                  <p>Kiambu Champoinship</p>
+                  <p>Kiambu Championship</p>
                 </div>
               </div>
             </div>
@@ -62,20 +59,18 @@ function Events() {
             <div className='EventList'>
               <div className='Event'>
                 <div className='EventDate'>
-                  <p>19</p>
-                  <p>JAN</p>
+                  <p>19 JAN</p>
                 </div>
                 <div className='EventName'>
-                  <p>Kiambu Champoinship</p>
+                  <p>Kiambu Championship</p>
                 </div>
               </div>
               <div className='Event'>
                 <div className='EventDate'>
-                  <p>19</p>
-                  <p>JAN</p>
+                  <p>19 JAN</p>
                 </div>
                 <div className='EventName'>
-                  <p>Kiambu Champoinship</p>
+                  <p>Kiambu Championship</p>
                 </div>
               </div>
             </div>
@@ -87,4 +82,4 @@ function Events() {
   )
 }
 
-export default Events
+export default Events;
