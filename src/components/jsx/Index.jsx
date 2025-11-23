@@ -1,8 +1,8 @@
 import HeroImage from './HeroImage.jsx';
-import '../styles/Events.css';
+import '../styles/Index.css';
 import eventsData from '../../../data/events.json'; // Import the JSON file
 
-function Events() {
+function Index() {
   return (
     <>
       <HeroImage />
@@ -107,4 +107,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default Index;

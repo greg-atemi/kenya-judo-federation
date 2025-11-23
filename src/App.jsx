@@ -6,7 +6,7 @@ import OurLeadership from './components/jsx/OurLeadership.jsx'
 import JudoHistory from './components/jsx/JudoHistory.jsx'
 import Navbar from './components/jsx/Navbar.jsx'
 import Footer from './components/jsx/Footer.jsx'
-import Events from './components/jsx/Events.jsx'
+import Events from './components/jsx/Index.jsx'
 import Ranking from './components/jsx/Ranking.jsx'
 import EventsList from './components/jsx/EventList.jsx'
 import EventDetail from './components/jsx/EventDetail.jsx'
@@ -31,11 +31,11 @@ function App() {
           
           {/* Events routes */}
           <Route path="/events" element={<EventsList />} />
-          <Route path="/events/:id" element={<EventDetail />} />
+          <Route path="/event/:id" element={<EventDetail />} />
           
           {/* Clubs routes */}
           <Route path="/clubs" element={<ClubsList />} />
-          <Route path="/clubs/:id" element={<ClubDetail />} />
+          <Route path="/club/:id" element={<ClubDetail />} />
           
           {/* Ranking routes */}
           <Route path="/ranking" element={<Ranking />} />
