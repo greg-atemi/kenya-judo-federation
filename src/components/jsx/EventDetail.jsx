@@ -1,18 +1,21 @@
 import '../styles/EventDetail.css';
+import eventData from '../../../data/event.json'; // Import the JSON file
 
 function EventDetail() {
+  // Assuming we are rendering the first event from the JSON file
+  const event = eventData.events[0];
 
   return (
     <>
       <div className='EventDetailContainer'>
         <div className='EventDetailSummary'>
           <div>
-            <p>Kiambu National Championships 2025</p>
-            <p>Kiambu - Kenya</p>
+            <p>{event.eventName}</p>
+            <p>{event.location}</p>
           </div>
           <div>
-            <p>90</p>
-            <p>Days to go</p>
+            <p>{event.days}</p>
+            <p>Days {event['ago/ahead']}</p>
           </div>
         </div>
         <div className='EventCards'>
@@ -25,11 +28,11 @@ function EventDetail() {
             <tbody>
               <tr>
                 <td>FROM</td>
-                <td>05 August 2025</td>
+                <td>{event.dateFrom}</td>
               </tr>
               <tr>
                 <td>TO</td>
-                <td>05 August 2025</td>
+                <td>{event.dateTo}</td>
               </tr>
             </tbody>
           </table>
@@ -43,11 +46,11 @@ function EventDetail() {
             <tbody>
               <tr>
                 <td>CLUBS</td>
-                <td>20</td>
+                <td>{event.numberOfClubs}</td>
               </tr>
               <tr>
                 <td>JUDOKAS</td>
-                <td>120</td>
+                <td>{event.numberOfJudokas}</td>
               </tr>
             </tbody>
           </table>
@@ -65,70 +68,35 @@ function EventDetail() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                  <td>1</td>
-                  <td>Gitothua Judo Club</td>
-                  <td>7</td>
-                  <td>3</td>
-                  <td>5</td>
-              </tr>
-              <tr>
-                  <td>1</td>
-                  <td>Gitothua Judo Club</td>
-                  <td>7</td>
-                  <td>3</td>
-                  <td>5</td>
-              </tr>
-              <tr>
-                  <td>1</td>
-                  <td>Gitothua Judo Club</td>
-                  <td>7</td>
-                  <td>3</td>
-                  <td>5</td>
-              </tr>
-              <tr>
-                  <td>1</td>
-                  <td>Gitothua Judo Club</td>
-                  <td>7</td>
-                  <td>3</td>
-                  <td>5</td>
-              </tr>
-              <tr>
-                  <td>1</td>
-                  <td>Gitothua Judo Club</td>
-                  <td>7</td>
-                  <td>3</td>
-                  <td>5</td>
-              </tr>
+              {event.clubRanking.map((club, index) => (
+                <tr key={index}>
+                  <td>{club.rank}</td>
+                  <td>{club.club}</td>
+                  <td>{club.gold}</td>
+                  <td>{club.silver}</td>
+                  <td>{club.bronze}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
         <div className="EventGallery">
           <h2>Event Gallery</h2>
           <div className="GalleryGrid">
-            <div className="GalleryItem-landscape">
-              <img src="/event1.jpg" alt="Gallery Item" />
-            </div>
-            <div className="GalleryItem-landscape">
-              <img src="/event2.jpg" alt="Gallery Item" />
-            </div>
-            <div className="GalleryItem-landscape">
-              <img src="/event1.jpg" alt="Gallery Item" />
-            </div>
-            <div className="GalleryItem-landscape">
-              <img src="/event2.jpg" alt="Gallery Item" />
-            </div>
-            <div className="GalleryItem-landscape">
-              <img src="/event1.jpg" alt="Gallery Item" />
-            </div>
-            <div className="GalleryItem-landscape">
-              <img src="/event2.jpg" alt="Gallery Item" />
-            </div>
+            {event.eventGallery.map((image, index) => (
+              <div key={index} className="GalleryItem-landscape">
+                <img src={image.imageUrl} alt={`Gallery Item ${index + 1}`} />
+              </div>
+            ))}
+            {/* <video width="640" height="360" controls>
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default EventDetail;
