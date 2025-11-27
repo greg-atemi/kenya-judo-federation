@@ -42,8 +42,8 @@ function App() {
           
           {/* Other routes */}
           <Route path="/fans" element={<Fans />} />
-          <Route path="/contact" element={<ContactUs />} />
-          
+          <Route path="/contactUs" element={<ContactUs />} />
+
           {/* Catch-all route for 404 - optional */}
           <Route path="*" element={<div>Page Not Found</div>} />
         </Routes>
