@@ -41,6 +41,17 @@
     align-items: center;
 }
 
+.EventDetailSummary > div{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    border-radius: 16px;
+    padding-bottom: 16px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+}
+
 .EventGallery {
   text-align: center;
 }
