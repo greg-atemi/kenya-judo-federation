@@ -36,16 +36,16 @@ function Footer() {
                 </div>
                 <div className="SocialIcons">
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                        <img src="facebook.png" alt="Facebook Icon" style={{ width: '13.5px', height: '25px' }} />
+                        <img src="/facebook.png" alt="Facebook Icon" style={{ width: '13.5px', height: '25px' }} />
                     </a>
                     <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                        <img src="youtube.png" alt="YouTube Icon" style={{ width: '23.7px', height: '16.67px' }} />
+                        <img src="/youtube.png" alt="YouTube Icon" style={{ width: '23.7px', height: '16.67px' }} />
                     </a>
                     <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-                        <img src="tiktok.png" alt="TikTok Icon" style={{ width: '18px', height: '20px' }} />
+                        <img src="/tiktok.png" alt="TikTok Icon" style={{ width: '18px', height: '20px' }} />
                     </a>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                        <img src="instagram.png" alt="Instagram Icon" style={{ width: '20px', height: '20px' }} />
+                        <img src="/instagram.png" alt="Instagram Icon" style={{ width: '20px', height: '20px' }} />
                     </a>
                 </div>
             </div>

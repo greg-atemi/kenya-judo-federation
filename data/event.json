@@ -1,0 +1,71 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "eventName": "Kiambu National Championships 2025",
+      "location": "Kiambu - Kenya", 
+      "dateFrom": "05 August 2025",
+      "dateTo": "10 August 2025",
+      "category": "Seniors",
+      "days": "90",
+      "ago/ahead": "ago",
+      "numberOfClubs": "20",
+      "numberOfJudokas": "210",
+      "eventGallery": [
+        {
+          "id": "1",
+          "imageUrl": "/events/kiambu1.jpg"
+        },
+        {
+          "id": "2",
+          "imageUrl": "/events/kiambu2.jpg"
+        },
+        {
+          "id": "3",
+          "imageUrl": "/events/kiambu3.jpg"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/events/kiambu4.jpg"
+        }
+      ],
+      "clubRanking": [
+        {
+          "rank": 1,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 2,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 3,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 4,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 5,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        }
+      ]
+    }
+  ]
+}

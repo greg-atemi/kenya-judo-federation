@@ -106,12 +106,24 @@ function EventDetail() {
         <div className="EventGallery">
           <h2>Event Gallery</h2>
           <div className="GalleryGrid">
-            <div className="GalleryItem"></div>
-            <div className="GalleryItem"></div>
-            <div className="GalleryItem"></div>
-            <div className="GalleryItem"></div>
-            <div className="GalleryItem"></div>
-            <div className="GalleryItem"></div>
+            <div className="GalleryItem-landscape">
+              <img src="/event1.jpg" alt="Gallery Item" />
+            </div>
+            <div className="GalleryItem-landscape">
+              <img src="/event2.jpg" alt="Gallery Item" />
+            </div>
+            <div className="GalleryItem-landscape">
+              <img src="/event1.jpg" alt="Gallery Item" />
+            </div>
+            <div className="GalleryItem-landscape">
+              <img src="/event2.jpg" alt="Gallery Item" />
+            </div>
+            <div className="GalleryItem-landscape">
+              <img src="/event1.jpg" alt="Gallery Item" />
+            </div>
+            <div className="GalleryItem-landscape">
+              <img src="/event2.jpg" alt="Gallery Item" />
+            </div>
           </div>
         </div>
       </div>

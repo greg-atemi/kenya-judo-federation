@@ -13,10 +13,10 @@
 
 .EventCards > table{
     text-align: center;
-    width: 322px;
+    width: 400px;
     border: 1px solid rgb(0, 0, 0, 0.2);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    font-size: 1.1em;
+    font-size: 1.2em;
     border-radius: 16px;
 }
 
@@ -39,6 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.2em;
 }
 
 .EventDetailSummary > div{
@@ -50,7 +51,7 @@
     border: 1px solid rgb(0, 0, 0, 0.2);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     font-size: 1.1em;
-    width: 256px;
+    width: 334px;
 }
 
 .EventGallery {
@@ -60,15 +61,30 @@
 .GalleryGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between items */
+  gap: 8px; /* Space between items */
   padding: 20px;
 }
 
-.GalleryItem {
+.GalleryItem-landscape {
   width: 100%;
-  height: 150px; /* Adjust height as needed */
-  border: 1px solid #000; /* Border for each item */
-  background-color: #f4f4f4; /* Placeholder background */
+  height: 240px; /* Adjust height as needed */
+}
+
+.GalleryItem-portrait {
+  width: 400px;
+  height: 100%; /* Adjust height as needed */
+}
+
+.GalleryItem-landscape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.GalleryItem-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire area */
 }
 
 @media (max-width: 768px) {
