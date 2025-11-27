@@ -12,20 +12,20 @@
 }
 
 .EventCards > table{
-    border-collapse: collapse;
     text-align: center;
-    border: #000 1px solid;
-    min-width: 320px;
+    width: 322px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+    border-radius: 16px;
 }
 
 .EventCards > table > thead{
-    border: #000 1px solid;
     text-align: left;
     padding: 8px;
 }
 
 .EventCards > table > thead > tr > th{
-    border: #000 1px solid;
     text-align: left;
     padding: 16px 32px;
 }
@@ -50,6 +50,7 @@
     border: 1px solid rgb(0, 0, 0, 0.2);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     font-size: 1.1em;
+    width: 256px;
 }
 
 .EventGallery {
@@ -84,6 +85,10 @@
     .EventDetailSummary{
         display: block;
         text-align: center;
+    }
+
+    .EventDetailSummary > div{
+        margin-top: 16px;
     }
 
     .EventCards{
