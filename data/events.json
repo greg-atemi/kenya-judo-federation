@@ -1,80 +1,454 @@
 {
-  "Seniors" : [
+  "events": [
     {
-      "date": "16-18 Jan 2025",
-      "event": "Kiambu Open Championships",
+      "id": "1",
+      "eventName": "Kiambu National Championships 2025",
+      "location": "Kiambu - Kenya", 
+      "dateFrom": "05 August 2025",
+      "dateTo": "10 August 2025",
       "category": "Seniors",
-      "time": "109 days ago"
+      "days": "90",
+      "ago/ahead": "to go",
+      "numberOfClubs": "20",
+      "numberOfJudokas": "210",
+      "eventGallery": [
+        {
+          "id": "1",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "2",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "3",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "5",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "6",
+          "imageUrl": "/event1.jpg"
+        }
+      ],
+      "clubRanking": [
+        {
+          "rank": 1,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 2,
+          "club": "Kajiado Stars Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 3,
+          "club": "Green Butterfly Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 4,
+          "club": "Ulinzi Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 5,
+          "club": "Kadaina Judo Club",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 3
+        }
+      ]
     },
     {
-      "date": "20-22 Feb 2025",
-      "event": "Nairobi Open 2025",
-      "category": "Senior",
-      "time": "80 days ago"
+      "id": "2",
+      "eventName": "Marigat National Championships 2025",
+      "location": "Marigat - Kenya",
+      "dateFrom": "05 August 2025",
+      "dateTo": "10 August 2025",
+      "category": "Juniors",
+      "days": "90",
+      "ago/ahead": "to go",
+      "numberOfClubs": "20",
+      "numberOfJudokas": "210",
+      "eventGallery": [
+        {
+          "id": "1",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "2",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "3",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "5",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "6",
+          "imageUrl": "/event1.jpg"
+        }
+      ],
+      "clubRanking": [
+        {
+          "rank": 1,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 2,
+          "club": "Kajiado Stars Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 3,
+          "club": "Green Butterfly Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 4,
+          "club": "Ulinzi Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 5,
+          "club": "Kadaina Judo Club",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 3
+        }
+      ]
     },
     {
-      "date": "10-12 Mar 2025",
-      "event": "Mombasa International 2025",
+      "id": "3",
+      "eventName": "Kilifi National Championships 2025",
+      "location": "Kilifi - Kenya",
+      "dateFrom": "05 August 2025",
+      "dateTo": "10 August 2025",
       "category": "Seniors",
-      "time": "60 days ago"
+      "days": "90",
+      "ago/ahead": "to go",
+      "numberOfClubs": "20",
+      "numberOfJudokas": "210",
+      "eventGallery": [
+        {
+          "id": "1",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "2",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "3",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "5",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "6",
+          "imageUrl": "/event1.jpg"
+        }
+      ],
+      "clubRanking": [
+        {
+          "rank": 1,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 2,
+          "club": "Kajiado Stars Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 3,
+          "club": "Green Butterfly Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 4,
+          "club": "Ulinzi Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 5,
+          "club": "Kadaina Judo Club",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 3
+        }
+      ]
     },
     {
-      "date": "5-7 Apr 2025",
-      "event": "Thika Regional 2025",
-      "category": "Seniors",
-      "time": "30 days ago"
-    }
-  ],
-  "Juniors" : [
-    {
-      "date": "16-18 Jan 2025",
-      "event": "Kiambu Open Championships",
+      "id": "4",
+      "eventName": "Njoro National Championships 2025",
+      "location": "Njoro - Kenya",
+      "dateFrom": "05 August 2025",
+      "dateTo": "10 August 2025",
       "category": "Juniors",
-      "time": "109 days ago"
+      "days": "90",
+      "ago/ahead": "to go",
+      "numberOfClubs": "20",
+      "numberOfJudokas": "210",
+      "eventGallery": [
+        {
+          "id": "1",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "2",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "3",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "5",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "6",
+          "imageUrl": "/event1.jpg"
+        }
+      ],
+      "clubRanking": [
+        {
+          "rank": 1,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 2,
+          "club": "Kajiado Stars Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 3,
+          "club": "Green Butterfly Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 4,
+          "club": "Ulinzi Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 5,
+          "club": "Kadaina Judo Club",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 3
+        }
+      ]
     },
     {
-      "date": "20-22 Feb 2025",
-      "event": "Gitothua Open 2025",
-      "category": "Juniors",
-      "time": "80 days ago"
-    },
-    {
-      "date": "10-12 Mar 2025",
-      "event": "Mombasa International 2025",
-      "category": "Juniors",
-      "time": "60 days ago"
-    },
-    {
-      "date": "5-7 Apr 2025",
-      "event": "Thika Regional 2025",
-      "category": "Juniors",
-      "time": "30 days ago"
-    }
-  ],
-  "Cadets" : [
-    {
-      "date": "16-18 Jan 2025",
-      "event": "Kiambu Open Championships",
+      "id": "5",
+      "eventName": "Njoro National Championships 2025",
+      "location": "Njoro - Kenya",
+      "dateFrom": "05 August 2025",
+      "dateTo": "10 August 2025",
       "category": "Cadets",
-      "time": "109 days ago"
+      "days": "90",
+      "ago/ahead": "to go",
+      "numberOfClubs": "20",
+      "numberOfJudokas": "210",
+      "eventGallery": [
+        {
+          "id": "1",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "2",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "3",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "5",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "6",
+          "imageUrl": "/event1.jpg"
+        }
+      ],
+      "clubRanking": [
+        {
+          "rank": 1,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 2,
+          "club": "Kajiado Stars Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 3,
+          "club": "Green Butterfly Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 4,
+          "club": "Ulinzi Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 5,
+          "club": "Kadaina Judo Club",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 3
+        }
+      ]
     },
     {
-      "date": "20-22 Feb 2025",
-      "event": "Nairobi Open 2025",
+      "id": "6",
+      "eventName": "Kitui National Championships 2025",
+      "location": "Kitui - Kenya",
+      "dateFrom": "05 August 2025",
+      "dateTo": "10 August 2025",
       "category": "Cadets",
-      "time": "80 days ago"
-    },
-    {
-      "date": "10-12 Mar 2025",
-      "event": "Mombasa International 2025",
-      "category": "Cadets",
-      "time": "60 days ago"
-    },
-    {
-      "date": "5-7 Apr 2025",
-      "event": "Thika Regional 2025",
-      "category": "Cadets",
-      "time": "30 days ago"
+      "days": "90",
+      "ago/ahead": "to go",
+      "numberOfClubs": "20",
+      "numberOfJudokas": "210",
+      "eventGallery": [
+        {
+          "id": "1",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "2",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "3",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "4",
+          "imageUrl": "/event1.jpg"
+        },
+        {
+          "id": "5",
+          "imageUrl": "/event2.jpg"
+        },
+        {
+          "id": "6",
+          "imageUrl": "/event1.jpg"
+        }
+      ],
+      "clubRanking": [
+        {
+          "rank": 1,
+          "club": "Gitothua Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 2,
+          "club": "Kajiado Stars Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 3,
+          "club": "Green Butterfly Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 4,
+          "club": "Ulinzi Judo Club",
+          "gold": 7,
+          "silver": 3,
+          "bronze": 5
+        },
+        {
+          "rank": 5,
+          "club": "Kadaina Judo Club",
+          "gold": 0,
+          "silver": 1,
+          "bronze": 3
+        }
+      ]
     }
   ]
 }

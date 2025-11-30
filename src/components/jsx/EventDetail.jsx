@@ -1,9 +1,14 @@
+import { useParams } from 'react-router-dom'; // Import useParams to access route parameters
 import '../styles/EventDetail.css';
-import eventData from '../../../data/event.json'; // Import the JSON file
+import eventsData from '../../../data/events.json'; // Import the JSON file
 
 function EventDetail() {
-  // Assuming we are rendering the first event from the JSON file
-  const event = eventData.events[0];
+  const { id } = useParams(); // Get the event ID from the URL
+  const event = eventsData.events.find((event) => event.id === id); // Find the event by ID
+
+  if (!event) {
+    return <p>404 not found</p>; // Handle case where event is not found
+  }
 
   return (
     <>

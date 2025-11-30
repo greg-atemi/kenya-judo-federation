@@ -1,4 +1,5 @@
 import HeroImage from './HeroImage.jsx';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/Index.css';
 import eventsData from '../../../data/events.json'; // Import the JSON file
 
@@ -13,30 +14,21 @@ function Index() {
           <div>
             <p className='EventTitle'>SENIORS</p>
             <div className='EventList'>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Seniors[0].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Seniors[0].event}</p>
-                </div>
-              </div>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Seniors[1].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Seniors[1].event}</p>
-                </div>
-              </div>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Seniors[2].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Seniors[2].event}</p>
-                </div>
-              </div>
+              {eventsData.events
+                .filter((event) => event.category === 'Seniors')
+                .slice(0, 3) // Display only the first 3 events
+                .map((event, index) => (
+                  <div key={index} className='Event'>
+                    <div className='EventDate'>
+                      <p>{event.dateFrom}</p>
+                    </div>
+                    <div className='EventName'>
+                      <Link to={`/event/${event.id}`} className="EventLink">
+                        {event.eventName}
+                      </Link>
+                    </div>
+                  </div>
+                ))}
             </div>
           </div>
 
@@ -44,30 +36,21 @@ function Index() {
           <div>
             <p className='EventTitle'>JUNIORS</p>
             <div className='EventList'>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Juniors[0].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Juniors[0].event}</p>
-                </div>
-              </div>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Juniors[1].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Juniors[1].event}</p>
-                </div>
-              </div>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Juniors[2].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Juniors[2].event}</p>
-                </div>
-              </div>
+              {eventsData.events
+                .filter((event) => event.category === 'Juniors')
+                .slice(0, 3) // Display only the first 3 events
+                .map((event, index) => (
+                  <div key={index} className='Event'>
+                    <div className='EventDate'>
+                      <p>{event.dateFrom}</p>
+                    </div>
+                    <div className='EventName'>
+                      <Link to={`/event/${event.id}`} className="EventLink">
+                        {event.eventName}
+                      </Link>
+                    </div>
+                  </div>
+                ))}
             </div>
           </div>
 
@@ -75,30 +58,21 @@ function Index() {
           <div>
             <p className='EventTitle'>CADETS</p>
             <div className='EventList'>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Cadets[0].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Cadets[0].event}</p>
-                </div>
-              </div>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Cadets[1].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Cadets[1].event}</p>
-                </div>
-              </div>
-              <div className='Event'>
-                <div className='EventDate'>
-                  <p>{eventsData.Cadets[2].date}</p>
-                </div>
-                <div className='EventName'>
-                  <p>{eventsData.Cadets[2].event}</p>
-                </div>
-              </div>
+              {eventsData.events
+                .filter((event) => event.category === 'Cadets')
+                .slice(0, 3) // Display only the first 3 events
+                .map((event, index) => (
+                  <div key={index} className='Event'>
+                    <div className='EventDate'>
+                      <p>{event.dateFrom}</p>
+                    </div>
+                    <div className='EventName'>
+                      <Link to={`/event/${event.id}`} className="EventLink">
+                        {event.eventName}
+                      </Link>
+                    </div>
+                  </div>
+                ))}
             </div>
           </div>
         </div>

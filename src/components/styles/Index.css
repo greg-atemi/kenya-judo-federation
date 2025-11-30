@@ -72,6 +72,15 @@
   margin-bottom: 4px;
 }
 
+.EventLink {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited color */
+}
+
+.EventLink:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 /* ===== Mobile view ===== */
 @media (max-width: 768px) {
   .Section {

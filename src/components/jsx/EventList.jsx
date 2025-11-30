@@ -1,12 +1,15 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/EventList.css';
 import eventsData from '../../../data/events.json'; // Import the JSON file
-import { useState } from 'react';
 
 function EventList() {
-  const [selectedCategory, setSelectedCategory] = useState('Seniors'); // Default category
+  const [selectedCategory, setSelectedCategory] = useState('All'); // State for category filter
 
-  // Get the filtered data based on the selected category
-  const filteredEvents = eventsData[selectedCategory] || [];
+  // Filter events based on selected category
+  const filteredEvents = eventsData.events.filter((event) => {
+    return selectedCategory === 'All' || event.category === selectedCategory;
+  });
 
   return (
     <>
@@ -17,33 +20,31 @@ function EventList() {
             <br />
             <select
               value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)} // Update state on selection
+              onChange={(e) => setSelectedCategory(e.target.value)} // Update category filter
             >
+              <option value="All">All</option>
               <option value="Seniors">Seniors</option>
               <option value="Juniors">Juniors</option>
               <option value="Cadets">Cadets</option>
             </select>
             <div>
               <p>Latest Competition</p>
-              <p>{filteredEvents[0]?.event || 'No event available'}</p>
-              <p>Date {filteredEvents[0]?.date || 'N/A'}</p>
+              <p>{eventsData.events[0]?.eventName || 'No event available'}</p>
+              <p>Date {eventsData.events[0]?.dateFrom || 'N/A'}</p>
             </div>
           </div>
           <div className='EventFilter'>
             <label>Year</label>
             <br />
-            <select
-              value={selectedCategory}
-              // onChange={(e) => setSelectedCategory(e.target.value)} // A future point of enhancement, currently Year filter is not functional
-            >
+            <select>
               <option value="2025">2025</option>
               <option value="2024">2024</option>
               <option value="2023">2023</option>
             </select>
             <div>
               <p>Next Competition</p>
-              <p>{filteredEvents[0]?.event || 'No event available'}</p>
-              <p>Date {filteredEvents[0]?.date || 'N/A'}</p>
+              <p>{eventsData.events[0]?.eventName || 'No event available'}</p>
+              <p>Date {eventsData.events[0]?.dateFrom || 'N/A'}</p>
             </div>
           </div>
         </div>
@@ -52,25 +53,31 @@ function EventList() {
           <table className='EventTable'>
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Event</th>
+                <th>Event Name</th>
+                <th>Location</th>
+                <th>Date From</th>
+                <th>Date To</th>
                 <th>Category</th>
-                <th>Time Ago</th>
               </tr>
             </thead>
             <tbody>
               {filteredEvents.length > 0 ? (
                 filteredEvents.map((event, index) => (
                   <tr key={index}>
-                    <td>{event.date}</td>
-                    <td>{event.event}</td>
+                    <td>
+                      <Link to={`/event/${event.id}`} className="EventLink">
+                        {event.eventName}
+                      </Link>
+                    </td>
+                    <td>{event.location}</td>
+                    <td>{event.dateFrom}</td>
+                    <td>{event.dateTo}</td>
                     <td>{event.category}</td>
-                    <td>{event.time}</td>
                   </tr>
                 ))
               ) : (
                 <tr>
-                  <td colSpan="4">No events available for {selectedCategory}</td>
+                  <td colSpan="5">No events available for {selectedCategory}</td>
                 </tr>
               )}
             </tbody>

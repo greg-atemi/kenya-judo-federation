@@ -72,6 +72,15 @@
   border-bottom: none; /* Remove border for the last row */
 }
 
+.EventLink {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited color */
+}
+
+.EventLink:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 /* ===== Mobile view ===== */
 @media (max-width: 768px) {
   .EventListContainer{
