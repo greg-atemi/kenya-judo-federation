@@ -13,44 +13,42 @@ import EventDetail from './components/jsx/EventDetail.jsx'
 import ClubsList from './components/jsx/ClubsList.jsx'
 import ClubDetail from './components/jsx/ClubDetail.jsx'
 import ContactUs from './components/jsx/ContactUs.jsx'
+import '../src/App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <Routes>
-          {/* Home page route */}
-          <Route path="/" element={<Events />} />
-          
-          {/* About routes */}
-          <Route path="/who-we-are" element={<WhoWeAre />} />
-          <Route path="/leadership" element={<OurLeadership />} />
-          <Route path="/kjf-history" element={<KJFHistory />} />
-          <Route path="/judo-history" element={<JudoHistory />} />
-          
-          {/* Events routes */}
-          <Route path="/events" element={<EventsList />} />
-          <Route path="/event/:id" element={<EventDetail />} />
-          
-          {/* Clubs routes */}
-          <Route path="/clubs" element={<ClubsList />} />
-          <Route path="/club/:id" element={<ClubDetail />} />
-          
-          {/* Ranking routes */}
-          <Route path="/ranking" element={<Ranking />} />
-          
-          {/* Other routes */}
-          <Route path="/fans" element={<Fans />} />
-          <Route path="/contactUs" element={<ContactUs />} />
 
-          {/* Catch-all route for 404 - optional */}
-          <Route path="*" element={<div>Page Not Found</div>} />
-        </Routes>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Events />} />
+
+            <Route path="/who-we-are" element={<WhoWeAre />} />
+            <Route path="/leadership" element={<OurLeadership />} />
+            <Route path="/kjf-history" element={<KJFHistory />} />
+            <Route path="/judo-history" element={<JudoHistory />} />
+
+            <Route path="/events" element={<EventsList />} />
+            <Route path="/event/:id" element={<EventDetail />} />
+
+            <Route path="/clubs" element={<ClubsList />} />
+            <Route path="/club/:id" element={<ClubDetail />} />
+
+            <Route path="/ranking" element={<Ranking />} />
+
+            <Route path="/fans" element={<Fans />} />
+            <Route path="/contactUs" element={<ContactUs />} />
+
+            <Route path="*" element={<div>Page Not Found</div>} />
+          </Routes>
+        </div>
+
         <Footer />
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

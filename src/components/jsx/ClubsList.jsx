@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
 import '../styles/ClubsList.css';
 import clubsData from '../../../data/clubs.json'; // Import the JSON file
 
@@ -38,20 +39,41 @@ function ClubsList() {
                 <th>Number of Judokas</th>
               </tr>
             </thead>
-            <tbody>
-              {filteredClubs.length > 0 ? (
-                filteredClubs.map((club, index) => (
-                  <tr key={index}>
-                    <td>{club.clubName}</td>
-                    <td>{club.region}</td>
-                    <td>{club.numberOfJudokas}</td>
-                  </tr>
-                ))
-              ) : (
-                <tr>
-                  <td colSpan="3">No clubs available for {selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} region</td>
-                </tr>
-              )}
+
+            <tbody style={{ position: "relative" }}>
+              <AnimatePresence>
+                {filteredClubs.length > 0 ? (
+                  filteredClubs.map((club, index) => (
+                    <motion.tr
+                      key={club.id || index}
+                      initial={{ opacity: 0, y: -8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -8 }}
+                      transition={{ duration: 0.25 }}
+                      layout
+                    >
+                      <td>{club.clubName}</td>
+                      <td>{club.region}</td>
+                      <td>{club.numberOfJudokas}</td>
+                    </motion.tr>
+                  ))
+                ) : (
+                  <motion.tr
+                    key="empty-row"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.25 }}
+                    layout
+                  >
+                    <td colSpan="3">
+                      No clubs available for{" "}
+                      {selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)}{" "}
+                      region
+                    </td>
+                  </motion.tr>
+                )}
+              </AnimatePresence>
             </tbody>
           </table>
         </div>

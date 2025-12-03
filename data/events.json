@@ -2,7 +2,7 @@
   "events": [
     {
       "id": "1",
-      "eventName": "Kiambu National Championships 2025",
+      "eventName": "Kiambu National Championships",
       "location": "Kiambu - Kenya", 
       "dateFrom": "05 August 2025",
       "dateTo": "10 August 2025",
@@ -77,7 +77,7 @@
     },
     {
       "id": "2",
-      "eventName": "Marigat National Championships 2025",
+      "eventName": "Marigat National Championships",
       "location": "Marigat - Kenya",
       "dateFrom": "05 August 2025",
       "dateTo": "10 August 2025",
@@ -152,7 +152,7 @@
     },
     {
       "id": "3",
-      "eventName": "Kilifi National Championships 2025",
+      "eventName": "Kilifi National Championships",
       "location": "Kilifi - Kenya",
       "dateFrom": "05 August 2025",
       "dateTo": "10 August 2025",
@@ -227,7 +227,7 @@
     },
     {
       "id": "4",
-      "eventName": "Njoro National Championships 2025",
+      "eventName": "Njoro National Championships",
       "location": "Njoro - Kenya",
       "dateFrom": "05 August 2025",
       "dateTo": "10 August 2025",
@@ -302,7 +302,7 @@
     },
     {
       "id": "5",
-      "eventName": "Njoro National Championships 2025",
+      "eventName": "Njoro National Championships",
       "location": "Njoro - Kenya",
       "dateFrom": "05 August 2025",
       "dateTo": "10 August 2025",
@@ -377,7 +377,7 @@
     },
     {
       "id": "6",
-      "eventName": "Kitui National Championships 2025",
+      "eventName": "Kitui National Championships",
       "location": "Kitui - Kenya",
       "dateFrom": "05 August 2025",
       "dateTo": "10 August 2025",
