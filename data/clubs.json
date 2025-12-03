@@ -1,27 +1,37 @@
 [
   {
+    "id": "1",
     "clubName": "Gitothua Judo Club",
     "region": "Central",
+    "imageUrl": "/event2.jpg",
     "numberOfJudokas": 50
   },
   {
+    "id": "2",
     "clubName": "Ruiru Judo Club",
     "region": "Eastern",
+    "imageUrl": "/event2.jpg",
     "numberOfJudokas": 40
   },
   {
+    "id": "3",
     "clubName": "Thika Judo Club",
     "region": "Central",
+    "imageUrl": "/event2.jpg",
     "numberOfJudokas": 35
   },
   {
+    "id": "4",
     "clubName": "Nairobi Judo Club",
     "region": "Nairobi",
+    "imageUrl": "/event2.jpg",
     "numberOfJudokas": 60
   },
   {
+    "id": "5",
     "clubName": "Mombasa Judo Club",
     "region": "Coastal",
+    "imageUrl": "/event2.jpg",
     "numberOfJudokas": 45
   }
 ]

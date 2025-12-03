@@ -8,7 +8,7 @@
 .EventFilterGroup {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   justify-content: space-between;
 }
 
@@ -47,6 +47,7 @@
   width: 100%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
+  border: 1px solid rgb(0, 0, 0, 0.25);
 }
 
 .EventTable th, .EventTable td {
@@ -58,6 +59,7 @@
 .EventTable th {
   font-weight: bold;
   color: #333;
+  background-color: #dfdfdf;
 }
 
 .EventTable td {

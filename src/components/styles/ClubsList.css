@@ -1,39 +1,50 @@
 .ClubsListContainer{
-    max-width: 1200px;
-    margin: 40px auto;
     display: flex;
-    flex-direction: column;
     gap: 40px;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 480px;
+    padding-right: 480px;
 }
 
 .ClubsListSearch select{
-    width: 20%;
+    width: 25%;
     padding: 10px;
     font-size: 1em;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-.ClubsListTable > div {
-    display: flex;
-    border-bottom: #000 1px solid;
-    padding: 32px 0;
+.ClubsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 1px solid rgb(0, 0, 0, 0.25);
 }
 
-.ClubsListTable > div > div {
-    flex: 1; /* makes each child take equal width */
+.ClubsTable th, .ClubsTable td {
+  text-align: left;
+  padding: 24px;
+  font-size: 1em;
 }
 
-.ClubsListTable > div > div:first-child {
-    text-align: left;
+.ClubsTable th {
+  font-weight: bold;
+  color: #333;
+  background-color: #dfdfdf;
 }
 
-.ClubsListTable > div > div:nth-child(2) {
-    text-align: center;
+.ClubsTable td {
+  color: #555;
 }
 
-.ClubsListTable > div > div:last-child {
-    text-align: right;
+.ClubsTable tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.ClubsTable tr:last-child {
+  border-bottom: none; /* Remove border for the last row */
 }
 
 /* ===== Mobile view ===== */

@@ -8,14 +8,14 @@ function ClubsList() {
   // Filter clubs based on the selected region
   const filteredClubs = selectedRegion === 'all'
     ? clubsData
-    : clubsData.filter(club => club.region.toLowerCase() === selectedRegion);
+    : clubsData.filter((club) => club.region.toLowerCase() === selectedRegion);
 
   return (
     <>
       <div className='ClubsListContainer'>
         <div className='ClubsListSearch'>
-          <p>Club Search</p>
-          <p>Region</p>
+          <p style={{ fontSize: '1.5em', marginTop: '0' }}>Club Search</p>
+          <p style={{ fontSize: '1.5em', marginTop: '0' }}>Region</p>
           <select
             value={selectedRegion}
             onChange={(e) => setSelectedRegion(e.target.value)} // Update state on selection
@@ -28,18 +28,32 @@ function ClubsList() {
             <option value="rift-valley">Rift Valley</option>
           </select>
         </div>
-        <div className='ClubsListTable'>
-          {filteredClubs.length > 0 ? (
-            filteredClubs.map((club, index) => (
-              <div key={index} className="ClubItem">
-                <div>{club.clubName}</div>
-                <div>{club.region} Region</div>
-                <div>{club.numberOfJudokas} Judokas</div>
-              </div>
-            ))
-          ) : (
-            <p>No clubs for {selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} region</p>
-          )}
+
+        <div className='ClubsContainer'>
+          <table className='ClubsTable'>
+            <thead>
+              <tr>
+                <th>Club Name</th>
+                <th>Region</th>
+                <th>Number of Judokas</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredClubs.length > 0 ? (
+                filteredClubs.map((club, index) => (
+                  <tr key={index}>
+                    <td>{club.clubName}</td>
+                    <td>{club.region}</td>
+                    <td>{club.numberOfJudokas}</td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="3">No clubs available for {selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1)} region</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
         </div>
       </div>
     </>
