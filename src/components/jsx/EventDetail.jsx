@@ -23,53 +23,29 @@ function EventDetail() {
             <p>Days {event['ago/ahead']}</p>
           </div>
         </div>
-        <div className='EventCards'>
-          <table>
-            <thead>
-              <tr>
-                <th colSpan="2">Dates</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>FROM</td>
-                <td>{event.dateFrom}</td>
-              </tr>
-              <tr>
-                <td>TO</td>
-                <td>{event.dateTo}</td>
-              </tr>
-            </tbody>
-          </table>
 
-          <table>
-            <thead>
-              <tr>
-                <th colSpan="2">Numbers</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>CLUBS</td>
-                <td>{event.numberOfClubs}</td>
-              </tr>
-              <tr>
-                <td>JUDOKAS</td>
-                <td>{event.numberOfJudokas}</td>
-              </tr>
-            </tbody>
-          </table>
+        <div className='EventDetailSummary'>
+          <div>
+            <h3>Dates</h3>
+            <p>From: 05 August 2025</p>
+            <p>To: 10 August 2025</p>
+          </div>
+          <div>
+            <h3>Numbers</h3>
+            <p>Clubs: 12</p>
+            <p>Judokas: 125</p>
+          </div>
         </div>
-        
+
         <div className="Ranking">
           <table className="RankingTable">
             <thead>
               <tr>
                   <th className="Neutral">#</th>
                   <th className="Neutral">Club</th>
-                  <th className="Gold"></th>
-                  <th className="Silver"></th>
-                  <th className="Bronze"></th>
+                  <th style={{ backgroundColor: 'gold' }}></th>
+                  <th style={{ backgroundColor: 'silver' }}></th>
+                  <th style={{ backgroundColor: '#cd7f32' }}></th>
               </tr>
             </thead>
             <tbody>
@@ -77,9 +53,9 @@ function EventDetail() {
                 <tr key={index}>
                   <td>{club.rank}</td>
                   <td>{club.club}</td>
-                  <td>{club.gold}</td>
-                  <td>{club.silver}</td>
-                  <td>{club.bronze}</td>
+                  <td style={{ textAlign: 'center' }}>{club.gold}</td>
+                  <td style={{ textAlign: 'center' }}>{club.silver}</td>
+                  <td style={{ textAlign: 'center' }}>{club.bronze}</td>
                 </tr>
               ))}
             </tbody>

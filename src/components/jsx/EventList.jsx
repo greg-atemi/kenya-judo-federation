@@ -16,9 +16,10 @@ function EventList() {
     <>
       <div className='EventListContainer'>
         <div className='EventListContainerTop'>
+          <h2>Events</h2>
           <div className='EventFilters'>
             <div>
-              <label><strong>Category</strong></label>
+              <label>Filter by Category</label>
               <br />
               <select
                 value={selectedCategory}
@@ -31,7 +32,7 @@ function EventList() {
               </select>
             </div>
             <div>
-              <label><strong>Year</strong></label>
+              <label>Filter by Year</label>
               <br />
               <select>
                 <option value="2025">2025</option>
@@ -44,14 +45,14 @@ function EventList() {
             <div>
               <p><strong>Latest Competition</strong></p>
               <p>{eventsData.events[0]?.eventName || 'No event available'}</p>
-              <p>From: {eventsData.events[0]?.dateFrom + ' ' + eventsData.events[0]?.monthFrom + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
-              <p>To: {eventsData.events[0]?.dateTo + ' ' + eventsData.events[0]?.monthTo + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
+              <p>Date From: {eventsData.events[0]?.dateFrom + ' ' + eventsData.events[0]?.monthFrom + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
+              <p>Date To: {eventsData.events[0]?.dateTo + ' ' + eventsData.events[0]?.monthTo + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
             </div>
             <div>
               <p><strong>Next Competition</strong></p>
               <p>{eventsData.events[1]?.eventName || 'No event available'}</p>
-              <p>From: {eventsData.events[1]?.dateFrom + ' ' + eventsData.events[1]?.monthFrom + ' ' + eventsData.events[1]?.year || 'N/A'}</p>
-              <p>To: {eventsData.events[1]?.dateTo + ' ' + eventsData.events[1]?.monthTo + ' ' + eventsData.events[1]?.year || 'N/A'}</p>
+              <p>Date From: {eventsData.events[1]?.dateFrom + ' ' + eventsData.events[1]?.monthFrom + ' ' + eventsData.events[1]?.year || 'N/A'}</p>
+              <p>Date To: {eventsData.events[1]?.dateTo + ' ' + eventsData.events[1]?.monthTo + ' ' + eventsData.events[1]?.year || 'N/A'}</p>
             </div>
           </div>
         </div>

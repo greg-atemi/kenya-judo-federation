@@ -60,29 +60,34 @@
 }
 
 .RankingTable {
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 1px solid rgb(0, 0, 0, 0.25);
 }
 
 .RankingTable th, .RankingTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+    text-align: left;
+    padding: 24px;
+    font-size: 1em;
 }
 
-.Neutral {
-    background-color: #f4f4f4;
+.RankingTable th {
     font-weight: bold;
+    color: #333;
+    background-color: #dfdfdf;
 }
 
-.RankingTable tr:nth-child(even) {
-    background-color: #f9f9f9;
+.RankingTable td {
+    color: #555;
 }
 
-.RankingTable tr:hover {
-    background-color: #f1f1f1;
+.RankingTable tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.RankingTable tr:last-child {
+    border-bottom: none; /* Remove border for the last row */
 }
 
 .Gold {
