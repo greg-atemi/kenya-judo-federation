@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ScrollToTop from "./components/jsx/ScrollToTop.jsx";
-import Fans from './components/jsx/Fans.jsx'
+import OurLeadership from './components/jsx/OurLeadership.jsx'
+import ScrollToTop from "./components/jsx/ScrollToTop.jsx"
+import JudoHistory from './components/jsx/JudoHistory.jsx'
 import KJFHistory from './components/jsx/KJFHistory.jsx'
 import WhoWeAre from './components/jsx/WhoWeAre.jsx'
-import OurLeadership from './components/jsx/OurLeadership.jsx'
-import JudoHistory from './components/jsx/JudoHistory.jsx'
+import EventDetail from './components/jsx/EventDetail.jsx'
 import Navbar from './components/jsx/Navbar.jsx'
 import Footer from './components/jsx/Footer.jsx'
-import Events from './components/jsx/Index.jsx'
 import Ranking from './components/jsx/Ranking.jsx'
 import EventsList from './components/jsx/EventList.jsx'
-import EventDetail from './components/jsx/EventDetail.jsx'
 import ClubsList from './components/jsx/ClubsList.jsx'
 import ClubDetail from './components/jsx/ClubDetail.jsx'
 import ContactUs from './components/jsx/ContactUs.jsx'
+import Events from './components/jsx/Index.jsx'
+import Fans from './components/jsx/Fans.jsx'
 import '../src/App.css';
 
 function App() {
