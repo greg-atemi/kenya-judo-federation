@@ -86,10 +86,12 @@ function EventDetail() {
                 <img src={image.imageUrl} alt={`Gallery Item ${index + 1}`} />
               </div>
             ))}
+            
             {/* <video width="640" height="360" controls>
               <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video> */}
+
           </div>
         </div>
       </div>
