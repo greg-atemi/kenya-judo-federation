@@ -15,34 +15,38 @@ function EventList() {
   return (
     <>
       <div className='EventListContainer'>
-        <div className='EventFilterGroup'>
-          <div className='EventFilter'>
-            <label>Category</label>
-            <br />
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)} // Update category filter
-            >
-              <option value="All">All</option>
-              <option value="Seniors">Seniors</option>
-              <option value="Juniors">Juniors</option>
-              <option value="Cadets">Cadets</option>
+        <div className='EventListContainerTop'>
+          <div className='EventFilters'>
+            <div>
+              <label><strong>Category</strong></label>
+              <br />
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)} // Update category filter
+              >
+                <option value="All">All</option>
+                <option value="Seniors">Seniors</option>
+                <option value="Juniors">Juniors</option>
+                <option value="Cadets">Cadets</option>
+              </select>
+            </div>
+            <div>
+              <label><strong>Year</strong></label>
+              <br />
+              <select>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+              <option value="2023">2023</option>
             </select>
+            </div>
+          </div>
+          <div className='EventsSummary'>
             <div>
               <p><strong>Latest Competition</strong></p>
               <p>{eventsData.events[0]?.eventName || 'No event available'}</p>
               <p>From: {eventsData.events[0]?.dateFrom + ' ' + eventsData.events[0]?.monthFrom + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
               <p>To: {eventsData.events[0]?.dateTo + ' ' + eventsData.events[0]?.monthTo + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
             </div>
-          </div>
-          <div className='EventFilter'>
-            <label>Year</label>
-            <br />
-            <select>
-              <option value="2025">2025</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-            </select>
             <div>
               <p><strong>Next Competition</strong></p>
               <p>{eventsData.events[1]?.eventName || 'No event available'}</p>

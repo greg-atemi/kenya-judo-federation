@@ -5,18 +5,29 @@
   padding-right: 400px;
 }
 
-.EventFilterGroup {
+.EventFilters{
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.EventFilters > div{
+  width: 384px;
+}
+
+.EventListContainerTop {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 40px;
   justify-content: space-between;
 }
 
-.EventFilterGroup label {
-  font-size: 1.5em;
+.EventListContainerTop label {
+  font-size: 20px;
 }
 
-.EventFilterGroup select {
+.EventListContainerTop select {
   width: 100%;
   padding: 10px;
   font-size: 1em;
@@ -26,7 +37,12 @@
   margin-bottom: 40px;
 }
 
-.EventFilter > div{
+.EventsSummary{
+  display: flex;
+  justify-content: space-between;
+}
+
+.EventsSummary > div{
   font-family: 'Lato', sans-serif;
   padding-left: 32px;
   padding-right: 32px;
@@ -88,17 +104,34 @@
 /* ===== Mobile view ===== */
 @media (max-width: 768px) {
   .EventListContainer{
-    padding: 32px;
+    padding: 16px;
   }
 
-  .EventFilterGroup {
+  .EventFilters {
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 0;
+    margin-bottom: 16px;
   }
 
-  .EventFilterGroup select {
-    margin-bottom: 20px;
+  .EventFilters > div{
+    width: 100%;
+  }
+
+  .EventFilters select {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .EventsSummary{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .EventsSummary > div{
+    width: auto;
+    text-align: center;
+    margin-bottom: 16px;
   }
 
   .EventTable {
