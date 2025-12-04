@@ -27,15 +27,15 @@
     width: 320px;
 }
 
-.EventGallery {
-  text-align: center;
+.EventGallery > h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .GalleryGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 8px; /* Space between items */
-  padding: 20px;
 }
 
 .GalleryItem-landscape {
@@ -62,22 +62,23 @@
 
 @media (max-width: 768px) {
     .EventDetailContainer{
-        padding: 32px;
-        margin: 0;
+        padding: 16px;
         gap: 32px;
+    }
+
+    .EventDetailSummary{
+      margin: 0;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+
+    .EventDetailSummary > div{
+      margin: 0;
+      width: 80%;
     }
     
     .GalleryGrid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-    }
-
-    .EventDetailSummary{
-        display: block;
-        text-align: center;
-    }
-
-    .EventDetailSummary > div{
-        margin-top: 16px;
     }
 
     .EventCards{

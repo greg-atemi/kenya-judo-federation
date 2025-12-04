@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom'; // Import useParams to access route parameters
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/EventDetail.css';
 import eventsData from '../../../data/events.json'; // Import the JSON file
+import { motion, AnimatePresence } from "framer-motion";
 
 function EventDetail() {
   const { id } = useParams(); // Get the event ID from the URL
@@ -13,6 +15,7 @@ function EventDetail() {
   return (
     <>
       <div className='EventDetailContainer'>
+        <h2>Event Summary</h2>
         <div className='EventDetailSummary'>
           <div>
             <p>{event.eventName}</p>
@@ -27,13 +30,13 @@ function EventDetail() {
         <div className='EventDetailSummary'>
           <div>
             <h3>Dates</h3>
-            <p>From: 05 August 2025</p>
-            <p>To: 10 August 2025</p>
+            <p>From: {event.dateFrom} {event.monthFrom} {event.year}</p>
+            <p>To: {event.dateTo} {event.monthTo} {event.year}</p>
           </div>
           <div>
             <h3>Numbers</h3>
-            <p>Clubs: 12</p>
-            <p>Judokas: 125</p>
+            <p>Clubs: {event.numberOfClubs}</p>
+            <p>Judokas: {event.numberOfJudokas}</p>
           </div>
         </div>
 
@@ -49,15 +52,29 @@ function EventDetail() {
               </tr>
             </thead>
             <tbody>
-              {event.clubRanking.map((club, index) => (
-                <tr key={index}>
-                  <td>{club.rank}</td>
-                  <td>{club.club}</td>
-                  <td style={{ textAlign: 'center' }}>{club.gold}</td>
-                  <td style={{ textAlign: 'center' }}>{club.silver}</td>
-                  <td style={{ textAlign: 'center' }}>{club.bronze}</td>
-                </tr>
-              ))}
+              <AnimatePresence>
+                {event.clubRanking.map((club, index) => (
+                  <motion.tr
+                    key={club.id || index}
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.25 }}
+                    layout
+                  >
+                    <td>{club.rank}</td>
+                    <td>
+                      <Link to={`/club/${club.id}`} className="EventLink">
+                        {club.club}
+                      </Link>
+                    </td>
+                    <td style={{ textAlign: 'center' }}>{club.gold}</td>
+                    <td style={{ textAlign: 'center' }}>{club.silver}</td>
+                    <td style={{ textAlign: 'center' }}>{club.bronze}</td>
+                  </motion.tr>
+                ))}
+              </AnimatePresence>
+
             </tbody>
           </table>
         </div>

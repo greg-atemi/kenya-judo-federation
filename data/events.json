@@ -42,6 +42,7 @@
       ],
       "clubRanking": [
         {
+          "id": "1",
           "rank": 1,
           "club": "Gitothua Judo Club",
           "gold": 7,
@@ -49,6 +50,7 @@
           "bronze": 5
         },
         {
+          "id": "6",
           "rank": 2,
           "club": "Kajiado Stars Judo Club",
           "gold": 7,
@@ -56,6 +58,7 @@
           "bronze": 5
         },
         {
+          "id": "7",
           "rank": 3,
           "club": "Green Butterfly Judo Club",
           "gold": 7,
@@ -63,6 +66,7 @@
           "bronze": 5
         },
         {
+          "id": "4",
           "rank": 4,
           "club": "Ulinzi Judo Club",
           "gold": 7,
@@ -70,6 +74,7 @@
           "bronze": 5
         },
         {
+          "id": "8",
           "rank": 5,
           "club": "Kadaina Judo Club",
           "gold": 0,

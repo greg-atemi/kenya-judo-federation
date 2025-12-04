@@ -9,7 +9,7 @@
   {
     "id": "2",
     "clubName": "Ruiru Judo Club",
-    "region": "Eastern",
+    "region": "Central",
     "imageUrl": "/event2.jpg",
     "numberOfJudokas": 40
   },
@@ -22,7 +22,7 @@
   },
   {
     "id": "4",
-    "clubName": "Nairobi Judo Club",
+    "clubName": "Ulinzi Judo Club",
     "region": "Nairobi",
     "imageUrl": "/event2.jpg",
     "numberOfJudokas": 60
@@ -30,7 +30,28 @@
   {
     "id": "5",
     "clubName": "Mombasa Judo Club",
-    "region": "Coastal",
+    "region": "Coast",
+    "imageUrl": "/event2.jpg",
+    "numberOfJudokas": 45
+  },
+  {
+    "id": "6",
+    "clubName": "Kajiado Stars Judo Club",
+    "region": "Rift Valley",
+    "imageUrl": "/event2.jpg",
+    "numberOfJudokas": 45
+  },
+  {
+    "id": "7",
+    "clubName": "Green Butterfly Judo Club",
+    "region": "Nairobi",
+    "imageUrl": "/event2.jpg",
+    "numberOfJudokas": 45
+  },
+  {
+    "id": "8",
+    "clubName": "Kadaina Judo Club",
+    "region": "Coast",
     "imageUrl": "/event2.jpg",
     "numberOfJudokas": 45
   }
