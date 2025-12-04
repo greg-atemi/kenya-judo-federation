@@ -7,7 +7,7 @@ function Index() {
   return (
     <>
       <HeroImage />
-      <section className='Section'>
+      <section className='IndexSection'>
         <h1>Upcoming Events</h1>
         <div className='EventListGroup'>
           {/* Seniors Section */}
@@ -21,6 +21,7 @@ function Index() {
                   <div key={index} className='Event'>
                     <div className='EventDate'>
                       <p>{event.dateFrom}</p>
+                      <p>{event.monthFrom}</p>
                     </div>
                     <div className='EventName'>
                       <Link to={`/event/${event.id}`} className="EventLink">
@@ -43,6 +44,7 @@ function Index() {
                   <div key={index} className='Event'>
                     <div className='EventDate'>
                       <p>{event.dateFrom}</p>
+                      <p>{event.monthFrom}</p>
                     </div>
                     <div className='EventName'>
                       <Link to={`/event/${event.id}`} className="EventLink">
@@ -65,6 +67,7 @@ function Index() {
                   <div key={index} className='Event'>
                     <div className='EventDate'>
                       <p>{event.dateFrom}</p>
+                      <p>{event.monthFrom}</p>
                     </div>
                     <div className='EventName'>
                       <Link to={`/event/${event.id}`} className="EventLink">
