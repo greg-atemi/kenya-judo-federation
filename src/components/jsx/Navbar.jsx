@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 
@@ -7,8 +7,16 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Disable scrolling when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
+
   return (
     <>
+      {/* Background overlay */}
+      {isOpen && <div className="nav-overlay" onClick={() => setIsOpen(false)}></div>}
+
       <div className="navbar">
         <div className="logo">
           <div className="Logo-placeholder"></div>
@@ -22,50 +30,32 @@ function Navbar() {
         </div>
 
         <ul className={`topnav ${isOpen ? "open" : ""}`}>
-          <li>
-            <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
-              Home
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/">Home</NavLink>
           </li>
-          <li>
-            <NavLink to="/events" className={({ isActive }) => isActive ? "active" : ""}>
-              Events
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/events">Events</NavLink>
           </li>
-          <li>
-            <NavLink to="/clubs" className={({ isActive }) => isActive ? "active" : ""}>
-              Clubs
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/clubs">Clubs</NavLink>
           </li>
-          <li>
-            <NavLink to="/fans" className={({ isActive }) => isActive ? "active" : ""}>
-              Fans
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/fans">Fans</NavLink>
           </li>
-          <li>
-            <NavLink to="/ranking" className={({ isActive }) => isActive ? "active" : ""}>
-              Ranking
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/ranking">Ranking</NavLink>
           </li>
-          <li>
-            <NavLink to="/kjf-history" className={({ isActive }) => isActive ? "active" : ""}>
-              KJF History
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/kjf-history">KJF History</NavLink>
           </li>
-          <li>
-            <NavLink to="/judo-history" className={({ isActive }) => isActive ? "active" : ""}>
-              Judo History
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/judo-history">Judo History</NavLink>
           </li>
-          <li>
-            <NavLink to="/leadership" className={({ isActive }) => isActive ? "active" : ""}>
-              Our Leadership
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/leadership">Our Leadership</NavLink>
           </li>
-          <li>
-            <NavLink to="/contactUs" className={({ isActive }) => isActive ? "active" : ""}>
-              Contact Us
-            </NavLink>
+          <li onClick={() => setIsOpen(false)}>
+            <NavLink to="/contactUs">Contact Us</NavLink>
           </li>
         </ul>
       </div>
