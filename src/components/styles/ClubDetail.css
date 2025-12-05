@@ -1,20 +1,16 @@
 .clubDetailContainer {
-    max-width: 1200px;
-    margin: 40px auto;
+    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
-.clubDetailContainer h3 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-}
-
-.clubDetailContainer p {
-    text-align: center;
-    font-size: 1.5rem;
+.clubDetailContainerContent p{
+    font-size: 20px;
 }
 
 .clubDetailContainer .contactUs{
@@ -29,25 +25,13 @@
 }
 
 .clubDetailContainer .contactUs button{
-    padding: 16px 40px;
-    font-size: 2rem;
+    padding: 12px 20px;
+    font-size: 16px;
     border: 1px solid #000;
     border-radius: 8px;
     color: #000;
     cursor: pointer;
     height: 20%;
-}
-
-.clubLeaderSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-}
-
-.clubLeaderInfo {
-    border: 1px solid #000;
-    padding: 20px 80px;
 }
 
 /* ===== Mobile view ===== */
@@ -56,18 +40,6 @@
         padding: 32px;
         margin: 0;
         gap: 32px;
-    }
-
-    .clubLeaderSection {
-        gap: 40px;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .clubLeaderInfo {
-        border: 1px solid #000;
-        padding: 16px 40px;
     }
 
     .clubDetailContainer .contactUs{
