@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { motion, AnimatePresence } from "framer-motion";
 import '../styles/ClubsList.css';
 import clubsData from '../../../data/clubs.json'; // Import the JSON file
@@ -15,8 +16,8 @@ function ClubsList() {
     <>
       <div className='ClubsListContainer'>
         <div className='ClubsListSearch'>
-          <p style={{ fontSize: '1.5em', marginTop: '0' }}>Club Search</p>
-          <p style={{ fontSize: '1.5em', marginTop: '0' }}>Region</p>
+          <h2>Clubs</h2>
+          <p style={{ fontSize: '20px', marginTop: '0' }}>Filter by Region</p>
           <select
             value={selectedRegion}
             onChange={(e) => setSelectedRegion(e.target.value)} // Update state on selection
@@ -52,7 +53,11 @@ function ClubsList() {
                       transition={{ duration: 0.25 }}
                       layout
                     >
-                      <td>{club.clubName}</td>
+                      <td>
+                        <Link to={`/club/${club.id}`} className="ClubLink">
+                          {club.clubName}
+                        </Link>
+                      </td>
                       <td>{club.region}</td>
                       <td>{club.numberOfJudokas}</td>
                     </motion.tr>

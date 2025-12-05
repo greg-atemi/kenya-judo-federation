@@ -1,11 +1,12 @@
 .ClubsListContainer{
+    font-family: 'Lato', sans-serif;
     display: flex;
     gap: 40px;
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 480px;
-    padding-right: 480px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 .ClubsListSearch select{
@@ -47,33 +48,36 @@
   border-bottom: none; /* Remove border for the last row */
 }
 
+.ClubLink {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited color */
+}
+
+.ClubLink:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 /* ===== Mobile view ===== */
 @media (max-width: 768px) {
-    .ClubsListContainer{
-        padding: 32px;
-        margin: 0;
-        gap: 32px;
-    }
+  .ClubsListContainer{
+    padding: 16px;
+  }
 
-    .ClubsListSearch p{
-        text-align: center;
-    }
+  .ClubsListSearch select {
+      width: 100%;
+  }
 
-    .ClubsListSearch select {
-        width: 100%;
-    }
+  .ClubsListTable > div {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px 0;
+  }
 
-    .ClubsListTable > div {
-        flex-direction: column;
-        gap: 16px;
-        padding: 16px 0;
-    }
+  .ClubsListTable > div > div:first-child {
+      text-align: center;
+  }
 
-    .ClubsListTable > div > div:first-child {
-        text-align: center;
-    }
-
-    .ClubsListTable > div > div:last-child {
-        text-align: center;
-    }
+  .ClubsListTable > div > div:last-child {
+      text-align: center;
+  }
 }
