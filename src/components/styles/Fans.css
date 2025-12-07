@@ -1,15 +1,22 @@
 .fansPageContainer {
     font-family: 'Lato', sans-serif;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 400px;
-    padding-right: 400px;
-    display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
+    padding-right: 400px;
+    padding-left: 400px;
+    padding-top: 40px;
+    display: flex;
+    gap: 40px;
 }
 
-.fansPageContainer p {
+.fansPageContainer p{
     font-size: 20px;
+    margin: 0;
+}
+
+.fansPageContainerContactUs{
+    display: flex;
+    justify-content: space-between;
 }
 
 .fansPageContainer .contactUs{
@@ -52,11 +59,19 @@
     justify-content: space-between;
 }
 
-.feedbackContainer form > button{
-    padding: 16px 0;
+form {
+    display: flex;
+    flex-direction: column;
+    /* padding: 16px; */
+    border-radius: 24px;
+}
+
+.fansPageContainerContactUs form > button{
+    font-family: 'Lato', sans-serif;
     border-radius: 8px;
-    width: 100%;
-    font-size: 1.2em;
+    margin-top: 8px;
+    padding: 12px 0;
+    font-size: 16px;
 }
 
 .fNameLastNameGroup > div{
@@ -70,39 +85,21 @@
     gap: 16px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    background-color: #ccc;
-    padding: 32px;
-    border-radius: 24px;
-}
-
 .firstElementWrapper {
     margin-bottom: 0;
 }
 
-.firstElementWrapper h3{
-    margin-top: 4px;
-    margin-bottom: 4px;
-    /* font-size: 1.5em; */
-}
-
-form label {
-    font-size: 1.2em;
-}
-
-form input,textarea,select {
-    font-size: 1.2em;
+form input, textarea {
+    font-size: 16px;
     padding: 8px;
     border: 1px solid #000;
     border-radius: 4px;
+    font-family: 'Lato', sans-serif;
 }
 
-.Normal {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+form textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 .phoneInput {
@@ -111,8 +108,24 @@ form input,textarea,select {
     gap: 16px;
 }
 
-form > *:not(:first-child) {
-    margin-top: 16px; /* Adds spacing starting from the second element */
+.Normal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.phoneInput {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#code{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 4px;
 }
 
 /* ===== Mobile view ===== */
