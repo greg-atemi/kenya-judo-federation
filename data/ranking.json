@@ -1,6 +1,7 @@
 {
   "Cadet": [
     {
+      "id": "1",
       "position": "1",
       "club": "Gitothua Judo Club",
       "Gold": 50,
@@ -8,6 +9,7 @@
       "Bronze": 50
     },
     {
+      "id": "2",
       "position": "2",
       "club": "Ruiru Judo Club",
       "Gold": 40,
@@ -15,6 +17,7 @@
       "Bronze": 40
     },
     {
+      "id": "3",
       "position": "3",
       "club": "Thika Judo Club",
       "Gold": 35,
@@ -22,13 +25,15 @@
       "Bronze": 35
     },
     {
+      "id": "4",
       "position": "4",
-      "club": "Nairobi Judo Club",
+      "club": "Ulinzi Judo Club",
       "Gold": 30,
       "Silver": 30,
       "Bronze": 30
     },
     {
+      "id": "5",
       "position": "5",
       "club": "Mombasa Judo Club",
       "Gold": 25,

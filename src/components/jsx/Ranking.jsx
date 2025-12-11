@@ -1,3 +1,5 @@
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { useState } from 'react';
 import '../styles/Ranking.css';
 import rankingData from '../../../data/ranking.json'; // Import the JSON file
@@ -9,10 +11,11 @@ function RankingPage() {
     const filteredRanking = Array.isArray(rankingData[selectedCategory]) ? rankingData[selectedCategory] : [];
 
     return (
-        <section className='Section'>
+        <div className='RankingContainer'>
+            <h2>Club Ranking</h2>
             <div className='RankingSearchContainer'>
                 <div className='RankingSearch'>
-                    <p>Select Category</p>
+                    <p style={{ fontSize: '20px', marginTop: '0px' }}>Select Category</p>
                     <select
                         value={selectedCategory}
                         onChange={(e) => setSelectedCategory(e.target.value)} // Update state on selection
@@ -23,7 +26,7 @@ function RankingPage() {
                     </select>
                 </div>
                 <div className='RankingSearch'>
-                    <p>Search by Year</p>
+                    <p style={{ fontSize: '20px', marginTop: '0px' }}>Search by Year</p>
                     <select>
                         <option value="select">Select Year</option>
                         <option value="2025">2025</option>
@@ -32,7 +35,6 @@ function RankingPage() {
                     </select>
                 </div>
             </div>
-            <h1>Club Ranking</h1>
             <div className="Ranking">
                 <table className="RankingTable">
                     <thead>
@@ -45,25 +47,38 @@ function RankingPage() {
                         </tr>
                     </thead>
                     <tbody>
+                        <AnimatePresence>
                         {filteredRanking.length > 0 ? (
                             filteredRanking.map((rank, index) => (
-                                <tr key={index}>
+                                <motion.tr
+                                    key={rank.id || index}
+                                    initial={{ opacity: 0, y: -8 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -8 }}
+                                    transition={{ duration: 0.25 }}
+                                    layout
+                                >
                                     <td>{rank.position || '-'}</td>
-                                    <td>{rank.club || '-'}</td>
+                                    <td>
+                                        <Link to={`/club/${rank.id}`} className="ClubLink">
+                                            {rank.club}
+                                        </Link>
+                                    </td>
                                     <td>{rank.Gold || '-'}</td>
                                     <td>{rank.Silver || '-'}</td>
                                     <td>{rank.Bronze || '-'}</td>
-                                </tr>
+                                </motion.tr>
                             ))
                         ) : (
                             <tr>
                                 <td colSpan="5">No data available for {selectedCategory} category</td>
                             </tr>
                         )}
+                        </AnimatePresence>
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
     );
 }
 
