@@ -145,6 +145,10 @@ form textarea {
         margin: 0;
     }
 
+    .fansPageContainerContactUs{
+        flex-direction: column;
+    }
+
     .clubLeaderSection {
         gap: 40px;
         align-items: center;
@@ -184,11 +188,6 @@ form textarea {
     .feedbackContainer p{
         margin: 4;
         text-align: center;
-    }
-
-    form {
-        padding: 24px;
-        border-radius: 16px;
     }
 
     .fNameLastNameGroup {
