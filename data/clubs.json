@@ -4,55 +4,95 @@
     "clubName": "Gitothua Judo Club",
     "region": "Central",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 50
+    "numberOfJudokas": 50,
+    "aboutUs": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "email": "gitothua@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   },
   {
     "id": "2",
     "clubName": "Ruiru Judo Club",
     "region": "Central",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 40
+    "numberOfJudokas": 40,
+    "aboutUs": "Ruiru Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Ruiru Judo Club has a rich history of excellence in judo. Since our inception in 2005, we have been at the forefront of judo development in Central Kenya. Our club has produced numerous champions at both national and international levels. We take pride in our commitment to nurturing young talent and promoting the values of judo. Join us as we continue to build on our legacy of success.",
+    "email": "ruiru@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   },
   {
     "id": "3",
     "clubName": "Thika Judo Club",
     "region": "Central",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 35
+    "numberOfJudokas": 35,
+    "aboutUs": "Thika Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "email": "gitothua@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   },
   {
     "id": "4",
     "clubName": "Ulinzi Judo Club",
     "region": "Nairobi",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 60
+    "numberOfJudokas": 60,
+    "aboutUs": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "email": "gitothua@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   },
   {
     "id": "5",
     "clubName": "Mombasa Judo Club",
     "region": "Coast",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 45
+    "numberOfJudokas": 45,
+    "aboutUs": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "email": "gitothua@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   },
   {
     "id": "6",
     "clubName": "Kajiado Stars Judo Club",
     "region": "Rift Valley",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 45
+    "numberOfJudokas": 45,
+    "aboutUs": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "email": "gitothua@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   },
   {
     "id": "7",
     "clubName": "Green Butterfly Judo Club",
     "region": "Nairobi",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 45
+    "numberOfJudokas": 45,
+    "aboutUs": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "email": "gitothua@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   },
   {
     "id": "8",
     "clubName": "Kadaina Judo Club",
     "region": "Coast",
     "imageUrl": "/event2.jpg",
-    "numberOfJudokas": 45
+    "numberOfJudokas": 45,
+    "aboutUs": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "ourHistory": "Gitothua Judo Club is a premier judo training center located in the heart of Central Kenya. Established in 2005, our club has been dedicated to promoting the art of judo and nurturing talent from grassroots to elite levels. With a team of experienced coaches and state-of-the-art facilities, we provide comprehensive training programs for judokas of all ages and skill levels. Our mission is to foster discipline, respect, and excellence both on and off the mat. Join us to be part of a vibrant judo community and take your skills to the next level.",
+    "email": "gitothua@gmail.com",
+    "phone": "0722334455",
+    "location": "Ruiru"
   }
 ]
