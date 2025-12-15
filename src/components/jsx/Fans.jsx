@@ -18,11 +18,11 @@ function Fans() {
             <h2>We value your feedback</h2>
             <p>Contact Us</p>
             <br></br>
-            <p>Email: gitothua@yahoo.com</p>
+            <p>Email: kenyajudofederation@gmail.com</p>
             <br></br>
             <p>Phone: +254 123 456908</p>
             <br></br>
-            <p>Follow Us</p>
+            <p>Follow Us on our socials</p>
           </div>
           <div>
             <form>
