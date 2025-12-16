@@ -1,8 +1,52 @@
 import '../styles/Fans.css';
 import HeroImage from './HeroImage.jsx';
 import countryCodes from '../../../data/countryCodes.json'; // Import the JSON file
+import { useState } from 'react';
 
 function Fans() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneCode: '+254', // Set default value to +254
+    phone: '',
+    message: '',
+  });
+
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validate form fields
+    const { firstName, lastName, email, phoneCode, phone, message } = formData;
+    if (!firstName || !lastName || !email || !phoneCode || !phone || !message) {
+      setErrorMessage('Please fill in all the fields first.');
+      setSuccessMessage('');
+      return;
+    }
+
+    // Show success message
+    setSuccessMessage('Thank you for your feedback!');
+    setErrorMessage('');
+
+    // Clear the form
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phoneCode: '+254', // Reset to default value
+      phone: '',
+      message: '',
+    });
+  };
+
   return (
     <>
       <HeroImage />
@@ -25,40 +69,53 @@ function Fans() {
             <p>Follow Us on our socials</p>
           </div>
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="firstElementWrapper">
                 <h2>Get in Touch</h2>
               </div>
+              {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+              {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
               <div className='fNameLastNameGroup'>
                 <div>
                   <label htmlFor="firstName">First Name</label>
-                  <input id="firstName" type="text" />
+                  <input id="firstName" type="text" value={formData.firstName} onChange={handleChange} />
                 </div>
                 <div>
                   <label htmlFor="lastName">Last Name</label>
-                  <input id="lastName" type="text" />
+                  <input id="lastName" type="text" value={formData.lastName} onChange={handleChange} />
                 </div>
               </div>
               <div className='Normal'>
                 <label htmlFor="email">Email</label>
-                <input id="email" type="email" />
+                <input id="email" type="email" value={formData.email} onChange={handleChange} />
               </div>
               <div className='Normal'>
                 <label htmlFor="phone">Phone Number</label>
                 <div className='phoneInput'>
-                  <select style={{ width: '22%' }} id="code" type="tel">
+                  <select
+                    style={{ width: '22%' }}
+                    id="phoneCode"
+                    value={formData.phoneCode}
+                    onChange={handleChange}
+                  >
                     {countryCodes.map((country, index) => (
                       <option key={index} value={country.code}>
                         {country.flag} {country.code}
                       </option>
                     ))}
                   </select>
-                  <input style={{ width: '78%' }} id="phone" type="tel" />
+                  <input
+                    style={{ width: '78%' }}
+                    id="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className='Normal'>
                 <label htmlFor="message">Message</label>
-                <textarea id="message"></textarea>
+                <textarea id="message" value={formData.message} onChange={handleChange}></textarea>
               </div>
               <button type="submit">SUBMIT</button>
             </form>
