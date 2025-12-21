@@ -133,7 +133,7 @@ form textarea {
     .fansPageContainer{
         padding: 32px 16px;
         margin: 0;
-        gap: 16px;
+        gap: 40px;
     }
 
     .fansPageContainer h3 {
@@ -147,6 +147,7 @@ form textarea {
 
     .fansPageContainerContactUs{
         flex-direction: column;
+        gap: 32px;
     }
 
     .clubLeaderSection {

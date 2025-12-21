@@ -9,6 +9,11 @@
     padding-right: 400px;
 }
 
+.clubDetailContainerContent h2{
+    margin: 0;
+    margin-bottom: 16px;
+}
+
 .clubDetailContainerContent p{
     font-size: 20px;
 }
@@ -16,7 +21,6 @@
 .clubDetailContainer .contactUs{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .clubDetailContainer .contactUs p,
@@ -39,7 +43,7 @@
     .clubDetailContainer{
         padding: 32px;
         margin: 0;
-        gap: 32px;
+        gap: 24px;
     }
 
     .clubDetailContainer .contactUs{
@@ -50,7 +54,15 @@
 
     .clubDetailContainer .contactUs p,
     .clubDetailContainer .contactUs h3{
-        text-align: center;
         font-size: 1.25em;
-    }   
+        text-align: center;
+    }
+
+    .clubDetailContainer .contactUs button{
+        width: 32%;
+    }
+
+    .clubDetailContainer .contactUs h3{
+        margin: 0;
+    }
 }

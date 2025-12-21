@@ -72,4 +72,7 @@
         font-size: 1.5rem;
     }
 
+    .leadershipImagesContainer{
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
 }
