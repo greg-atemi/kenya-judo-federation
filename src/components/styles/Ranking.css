@@ -8,10 +8,15 @@
     padding-right: 400px;
 }
 
+.RankingContainer > h2{
+    margin: 0;
+    margin-bottom: 16px;
+}
+
 .RankingSearchContainer{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .RankingSearchContainer > div {
@@ -68,15 +73,20 @@
     position: relative;
 }
 
+.RankingTableWrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile devices */
+}
+
 .RankingTable {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  border: 1px solid rgb(0, 0, 0, 0.25);
+    width: 100%; /* Ensure the table takes up full width */
+    border-collapse: collapse; /* Optional: Improve table appearance */
+    border: #555 1px solid;
+    border-radius: 40px;
 }
 
 .RankingTable th, .RankingTable td {
-    text-align: left;
+    text-align: center;
     padding: 24px;
     font-size: 1em;
 }
@@ -113,15 +123,11 @@
 
 /* ===== Mobile view ===== */
 @media (max-width: 768px) {
-    .Section {
-        padding: 0;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 24px;
-        padding-bottom: 24px;
+    .RankingContainer {
+        padding: 16px;
     }
 
-    .Section > h1 {
+    .RankingContainer > h1 {
         font-size: 1.5em;
         color: #333;
         margin-top: 20px;
@@ -140,6 +146,12 @@
         margin-bottom: 16px;
     }
 
+    .RankingSearch > p{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
     .RankingSearch > span{
         text-align: center;
         font-size: 16px;
@@ -148,7 +160,6 @@
 
     .RankingSearch > select {
         padding-top: 8px;
-        text-align: center;
         padding-bottom: 8px;
         padding-left: 16px;
         padding-right: 16px;
@@ -157,9 +168,6 @@
         border-radius: 8px;
         background-color: #eee;
         cursor: pointer;
-        appearance: none; /* Removes the dropdown arrow */
-        -webkit-appearance: none; /* For WebKit browsers */
-        -moz-appearance: none; /* For Firefox */
         position: relative;
     }
 }

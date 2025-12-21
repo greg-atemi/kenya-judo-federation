@@ -28,6 +28,11 @@
   font-size: 20px;
 }
 
+.EventListContainerTop h2 {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
 .EventListContainerTop select {
   width: 100%;
   padding: 10px;

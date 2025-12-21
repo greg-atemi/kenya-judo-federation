@@ -8,6 +8,11 @@
     flex-direction: column;
 }
 
+.EventDetailContainer h2{
+    margin: 0;
+    margin-bottom: 16px;
+}
+
 .EventDetailSummary{
     display: flex;
     justify-content: space-between;
@@ -63,13 +68,13 @@
 @media (max-width: 768px) {
     .EventDetailContainer{
         padding: 16px;
-        gap: 32px;
     }
 
     .EventDetailSummary{
       margin: 0;
       flex-direction: column;
       row-gap: 16px;
+      margin-bottom: 32px;
     }
 
     .EventDetailSummary > div{

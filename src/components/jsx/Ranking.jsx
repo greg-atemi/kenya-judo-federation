@@ -36,47 +36,49 @@ function RankingPage() {
                 </div>
             </div>
             <div className="Ranking">
-                <table className="RankingTable">
-                    <thead>
-                        <tr>
-                            <th className="Neutral">#</th>
-                            <th className="Neutral">Club</th>
-                            <th className="Gold">Gold</th>
-                            <th className="Silver">Silver</th>
-                            <th className="Bronze">Bronze</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <AnimatePresence>
-                        {filteredRanking.length > 0 ? (
-                            filteredRanking.map((rank, index) => (
-                                <motion.tr
-                                    key={rank.id || index}
-                                    initial={{ opacity: 0, y: -8 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: -8 }}
-                                    transition={{ duration: 0.25 }}
-                                    layout
-                                >
-                                    <td>{rank.position || '-'}</td>
-                                    <td>
-                                        <Link to={`/club/${rank.id}`} className="ClubLink">
-                                            {rank.club}
-                                        </Link>
-                                    </td>
-                                    <td>{rank.Gold || '-'}</td>
-                                    <td>{rank.Silver || '-'}</td>
-                                    <td>{rank.Bronze || '-'}</td>
-                                </motion.tr>
-                            ))
-                        ) : (
+                <div className="RankingTableWrapper">
+                    <table className="RankingTable">
+                        <thead>
                             <tr>
-                                <td colSpan="5">No data available for {selectedCategory} category</td>
+                                <th className="Neutral">#</th>
+                                <th className="Neutral">Club</th>
+                                <th style={{ backgroundColor: 'gold' }}></th>
+                                <th style={{ backgroundColor: 'silver' }}></th>
+                                <th style={{ backgroundColor: '#cd7f32' }}></th>
                             </tr>
-                        )}
-                        </AnimatePresence>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <AnimatePresence>
+                            {filteredRanking.length > 0 ? (
+                                filteredRanking.map((rank, index) => (
+                                    <motion.tr
+                                        key={rank.id || index}
+                                        initial={{ opacity: 0, y: -8 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: -8 }}
+                                        transition={{ duration: 0.25 }}
+                                        layout
+                                    >
+                                        <td>{rank.position || '-'}</td>
+                                        <td>
+                                            <Link to={`/club/${rank.id}`} className="ClubLink">
+                                                {rank.club}
+                                            </Link>
+                                        </td>
+                                        <td>{rank.Gold || '-'}</td>
+                                        <td>{rank.Silver || '-'}</td>
+                                        <td>{rank.Bronze || '-'}</td>
+                                    </motion.tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="5">No data available for {selectedCategory} category</td>
+                                </tr>
+                            )}
+                            </AnimatePresence>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );
