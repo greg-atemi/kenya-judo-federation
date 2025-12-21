@@ -44,13 +44,21 @@ function EventList() {
           <div className='EventsSummary'>
             <div>
               <p><strong>Latest Competition</strong></p>
-              <p>{eventsData.events[0]?.eventName || 'No event available'}</p>
+              <p>
+                <Link to={`/event/${eventsData.events[0].id}`} className="EventLink">
+                  {eventsData.events[0].eventName}
+                </Link>
+              </p>
               <p>Date From: {eventsData.events[0]?.dateFrom + ' ' + eventsData.events[0]?.monthFrom + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
               <p>Date To: {eventsData.events[0]?.dateTo + ' ' + eventsData.events[0]?.monthTo + ' ' + eventsData.events[0]?.year || 'N/A'}</p>
             </div>
             <div>
               <p><strong>Next Competition</strong></p>
-              <p>{eventsData.events[1]?.eventName || 'No event available'}</p>
+              <p>
+                <Link to={`/event/${eventsData.events[1].id}`} className="EventLink">
+                  {eventsData.events[1].eventName}
+                </Link>
+              </p>
               <p>Date From: {eventsData.events[1]?.dateFrom + ' ' + eventsData.events[1]?.monthFrom + ' ' + eventsData.events[1]?.year || 'N/A'}</p>
               <p>Date To: {eventsData.events[1]?.dateTo + ' ' + eventsData.events[1]?.monthTo + ' ' + eventsData.events[1]?.year || 'N/A'}</p>
             </div>
