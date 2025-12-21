@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "name": "Shadrack Maluki",
+    "position": "KJF President",
+    "portraitURL": "/image2.png",
+    "bio": "Shadrack Maluki has been at the helm of the Kenya Judo Federation since 2016, steering the organization towards new heights with his visionary leadership and unwavering commitment to the sport."
+  },
+  {
+    "id": "2",
+    "name": "Duncan Chemiryo",
+    "position": "Deputy President",
+    "portraitURL": "/image2.png",
+    "bio": "Duncan Chemiryo has been a pivotal figure in the Kenya Judo Federation, known for his strategic vision and dedication to promoting judo across the nation."
+  },
+  {
+    "id": "3",
+    "name": "Doreen Okoth",
+    "position": "Secretary General",
+    "portraitURL": "/image3.png",
+    "bio": "Doreen Okoth has been a driving force in the Kenya Judo Federation, advocating for the growth of judo and inspiring a new generation of athletes."
+  },
+  {
+    "id": "4",
+    "name": "Kennedy Kwithya",
+    "position": "Deputy Secretary General",
+    "portraitURL": "/image2.png",
+    "bio": "Kennedy Kwithya has been a dedicated member of the Kenya Judo Federation, working tirelessly to support the growth of judo and empower athletes at all levels."
+  },
+    {
+    "id": "5",
+    "name": "David Busolo",
+    "position": "Treasurer",
+    "portraitURL": "/image2.png",
+    "bio": "David Busolo has been a key player in the Kenya Judo Federation, bringing financial expertise and a passion for the sport to his role as Treasurer."
+  },
+  {
+    "id": "6",
+    "name": "Margaret",
+    "position": "Deputy Treasurer",
+    "portraitURL": "/image3.png",
+    "bio": "Margaret has been a dedicated member of the Kenya Judo Federation, working tirelessly to support the growth of judo and empower athletes at all levels."
+  },
+  {
+    "id": "7",
+    "name": "Basilio Mukaria",
+    "position": "Sporting Director",
+    "portraitURL": "/image2.png",
+    "bio": "Basilio Mukaria has been a dedicated member of the Kenya Judo Federation, working tirelessly to support the growth of judo and empower athletes at all levels."
+  },
+  {
+    "id": "8",
+    "name": "Zablon Masha",
+    "position": "Coaching and Education Director",
+    "portraitURL": "/image2.png",
+    "bio": "Zablon Masha has been a dedicated member of the Kenya Judo Federation, working tirelessly to support the growth of judo and empower athletes at all levels."
+  },
+    {
+    "id": "9",
+    "name": "Johnson Kirimi",
+    "position": "Referee Director",
+    "portraitURL": "/image2.png",
+    "bio": "Johnson Kirimi has been a dedicated member of the Kenya Judo Federation, working tirelessly to support the growth of judo and empower athletes at all levels."
+  }
+]

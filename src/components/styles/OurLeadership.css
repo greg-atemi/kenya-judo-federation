@@ -1,8 +1,8 @@
-.leadershipParentContainer {
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.leadershipParentContainer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 320px;
+    padding-right: 320px;
 }
 
 .leadershipParentContainer h3 {
@@ -12,10 +12,10 @@
 }
 
 .leadershipImagesContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    justify-content: center;
+    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    justify-items: center;
 }
 
 .leadershipImagesRow{
