@@ -17,6 +17,11 @@
     border: 1px solid #ccc;
 }
 
+.ClubsListSearch > h2{
+  margin: 0;
+  margin-bottom: 16px;
+}
+
 .ClubsTable {
   width: 100%;
   border-collapse: collapse;

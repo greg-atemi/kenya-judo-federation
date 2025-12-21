@@ -66,47 +66,49 @@ function EventList() {
         </div>
 
         <div className='EventContainer'>
-          <table className='EventTable'>
-            <thead>
-              <tr>
-                <th>Event Name</th>
-                <th>Location</th>
-                <th>Date From</th>
-                <th>Date To</th>
-                <th>Category</th>
-              </tr>
-            </thead>
-            <tbody>
-              <AnimatePresence>
-                {filteredEvents.length > 0 ? (
-                  filteredEvents.map((event, index) => (
-                    <motion.tr
-                      key={event.id || index}
-                      initial={{ opacity: 0, y: -8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -8 }}
-                      transition={{ duration: 0.25 }}
-                      layout
-                    >
-                      <td>
-                        <Link to={`/event/${event.id}`} className="EventLink">
-                          {event.eventName}
-                        </Link>
-                      </td>
-                      <td>{event.location}</td>
-                      <td>{event.dateFrom} {event.monthFrom} {event.year}</td>
-                      <td>{event.dateTo} {event.monthTo} {event.year}</td>
-                      <td>{event.category}</td>
-                    </motion.tr>
-                  ))
-                ) : (
-                  <tr>
-                    <td colSpan="5">No events available for {selectedCategory}</td>
-                  </tr>
-                )}
-              </AnimatePresence>
-            </tbody>
-          </table>
+          <div className="EventTableWrapper">
+            <table className='EventTable'>
+              <thead>
+                <tr>
+                  <th>Event Name</th>
+                  <th>Location</th>
+                  <th>Date From</th>
+                  <th>Date To</th>
+                  <th>Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <AnimatePresence>
+                  {filteredEvents.length > 0 ? (
+                    filteredEvents.map((event, index) => (
+                      <motion.tr
+                        key={event.id || index}
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -8 }}
+                        transition={{ duration: 0.25 }}
+                        layout
+                      >
+                        <td>
+                          <Link to={`/event/${event.id}`} className="EventLink">
+                            {event.eventName}
+                          </Link>
+                        </td>
+                        <td>{event.location}</td>
+                        <td>{event.dateFrom} {event.monthFrom} {event.year}</td>
+                        <td>{event.dateTo} {event.monthTo} {event.year}</td>
+                        <td>{event.category}</td>
+                      </motion.tr>
+                    ))
+                  ) : (
+                    <tr>
+                      <td colSpan="5">No events available for {selectedCategory}</td>
+                    </tr>
+                  )}
+                </AnimatePresence>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </>
