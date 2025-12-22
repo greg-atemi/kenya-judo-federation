@@ -1,0 +1,8 @@
+services:
+  nginx-react:
+    container_name: kjf
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
