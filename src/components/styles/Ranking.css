@@ -16,7 +16,7 @@
 .RankingSearchContainer{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
 }
 
 .RankingSearchContainer > div {
@@ -138,6 +138,8 @@
 
     .RankingSearchContainer {
         flex-direction: column;
+        margin: 0;
+        margin-bottom: 24px;
     }
 
     .RankingSearch {

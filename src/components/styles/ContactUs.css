@@ -199,4 +199,18 @@
         text-align: center;
     }
 
+    .contactUsLocationContainer {
+        flex-direction: column;
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .mapContainer {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .detailsContainer {
+        border-radius: 8px;
+    }
 }
