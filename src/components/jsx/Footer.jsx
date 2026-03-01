@@ -32,7 +32,7 @@ function Footer() {
             <hr></hr>
             <div className="FooterBottom">
                 <div>
-                    <p className="Copyright">2025 Soft-O Copyright - All Rights Reserved</p>
+                    <p className="Copyright">2026 Soft-O Copyright - All Rights Reserved</p>
                 </div>
                 <div className="SocialIcons">
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
