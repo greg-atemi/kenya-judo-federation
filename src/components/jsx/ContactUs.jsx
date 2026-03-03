@@ -112,7 +112,7 @@ function ContactUs() {
               title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3824.990674956227!2d36.889139506178495!3d-1.2296183905498288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15ead8566faf%3A0xf2138b665ed9ab02!2sKasarani%20Indoor%20Arena!5e0!3m2!1sen!2sus!4v1766177543925!5m2!1sen!2sus"
               width="100%"
-              height="400px"
+              height="480px"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
