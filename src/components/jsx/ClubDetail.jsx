@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'; // Import useParams to access route parameters
 import '../styles/ClubDetail.css';
-import HeroImage from './HeroImage.jsx';
+import ClubsHeroImage from './ClubsHeroImage.jsx';
 import clubData from '../../../data/clubs.json'; // Import the JSON file
 
 function ClubDetail() {
@@ -15,7 +15,7 @@ function ClubDetail() {
 
   return (
     <>
-      <HeroImage/>
+      <ClubsHeroImage/>
       <div className='clubDetailContainer'>
         <div className='clubDetailContainerContent'>
           <h2> About Us </h2>

@@ -4,8 +4,13 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null); // Track which dropdown is open
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const toggleDropdown = (menu) => {
+    setDropdownOpen(dropdownOpen === menu ? null : menu); // Toggle the dropdown
+  };
 
   // Disable scrolling when mobile menu is open
   useEffect(() => {
@@ -45,14 +50,25 @@ function Navbar() {
           <li onClick={() => setIsOpen(false)}>
             <NavLink to="/ranking">Ranking</NavLink>
           </li>
-          <li onClick={() => setIsOpen(false)}>
-            <NavLink to="/kjf-history">KJF History</NavLink>
-          </li>
-          <li onClick={() => setIsOpen(false)}>
-            <NavLink to="/judo-history">Judo History</NavLink>
-          </li>
-          <li onClick={() => setIsOpen(false)}>
-            <NavLink to="/leadership">Our Leadership</NavLink>
+          <li
+            className="dropdown"
+            onMouseEnter={() => toggleDropdown("who-are-we")}
+            onMouseLeave={() => toggleDropdown(null)}
+          >
+            <a className="dropdown-toggle">Who are we?</a>
+            {dropdownOpen === "who-are-we" && (
+              <ul className="dropdown-menu">
+                <li>
+                  <NavLink to="/kjf-history">KJF History</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/judo-history">Judo History</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/leadership">Our Leadership</NavLink>
+                </li>
+              </ul>
+            )}
           </li>
           <li onClick={() => setIsOpen(false)}>
             <NavLink to="/contactUs">Contact Us</NavLink>

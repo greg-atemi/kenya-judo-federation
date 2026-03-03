@@ -1,13 +1,13 @@
 import '../styles/HeroImage.css';
 
-function HeroImage() {
+function KJFHistoryHeroImage() {
 
   return (
     <>
       <div className='HeroImage'>
         <div>
-          <p className='HeroImageTitle'>Kenya Judo</p>
-          <p className='HeroImageTitle'>Federation</p>
+          <p className='HeroImageTitle'>Our</p>
+          <p className='HeroImageTitle'>Leadership</p>
           <p className='HeroImageDescription'>Uniting Kenya through the art of Judo. Building champions, fostering discipline, and promoting excellence across all registered counties.</p>
         </div>
       </div>
@@ -15,4 +15,4 @@ function HeroImage() {
   )
 }
 
-export default HeroImage
+export default KJFHistoryHeroImage;

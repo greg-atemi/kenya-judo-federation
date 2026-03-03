@@ -1,5 +1,5 @@
 import '../styles/Fans.css';
-import HeroImage from './HeroImage.jsx';
+import FansHeroImage from './FansHeroImage.jsx';
 import countryCodes from '../../../data/countryCodes.json'; // Import the JSON file
 import { useState } from 'react';
 
@@ -49,7 +49,7 @@ function Fans() {
 
   return (
     <>
-      <HeroImage />
+      <FansHeroImage />
       <div className='fansPageContainer'>
         <div>
           <h2>To all our dear Fans...</h2>

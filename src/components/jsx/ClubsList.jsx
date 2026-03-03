@@ -37,6 +37,8 @@ function ClubsList() {
               <tr>
                 <th>Club Name</th>
                 <th>Region</th>
+                <th>Location</th>
+                <th>Email</th>
                 <th>Number of Judokas</th>
               </tr>
             </thead>
@@ -59,6 +61,8 @@ function ClubsList() {
                         </Link>
                       </td>
                       <td>{club.region}</td>
+                      <td>{club.location}</td>
+                      <td>{club.email}</td>
                       <td>{club.numberOfJudokas}</td>
                     </motion.tr>
                   ))
