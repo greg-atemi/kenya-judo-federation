@@ -1,12 +1,12 @@
 import '../styles/OurLeadership.css';
-import HeroImage from './HeroImage.jsx';
+import OurLeadershipHeroImage from './OurLeadershipHeroImage.jsx';
 import LeadershipCard from './LeadershipCard.jsx'; // Import the LeadershipCard component
 import managementData from '../../../data/management.json'; // Import the JSON data
 
 function OurLeadership() {
   return (
     <>
-      <HeroImage />
+      <OurLeadershipHeroImage />
       <div className='leadershipParentContainer'>
         <div className='leadershipImagesContainer'>
           {managementData.map((leader) => (

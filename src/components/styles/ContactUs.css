@@ -75,29 +75,29 @@
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 320px;
+    padding-right: 320px;
 }
 
 .mapContainer {
     width: 64%;
-    height: 400px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40px;
+    border-radius: 16px;
     border: #888 2px solid;
 }
 
 .mapContainer iframe {
-    border-radius: 40px;
+    border-radius: 16px;
     border: none;
 }
 
 .detailsContainer {
     font-size: 1.2rem;
     border: #888 2px solid;
-    border-radius: 40px;
+    border-radius: 16px;
     padding: 24px;
     display: flex;
     background-color: #f5f5f5;

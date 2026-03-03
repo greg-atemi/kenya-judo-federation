@@ -1,11 +1,11 @@
 import '../styles/KJFHistory.css';
-import HeroImage from './HeroImage.jsx';
+import KJFHistoryHeroImage from './KJFHistoryHeroImage.jsx';
 
 function KJFHistory() {
 
   return (
     <>
-      <HeroImage/>
+      <KJFHistoryHeroImage/>
       <div className='fansPageContainer'>
         <div>
           <h2>KJF History</h2>

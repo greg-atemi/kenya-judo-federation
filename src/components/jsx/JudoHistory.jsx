@@ -1,11 +1,11 @@
 import '../styles/JudoHistory.css';
-import HeroImage from './HeroImage.jsx';
+import JudoHistoryHeroImage from './JudoHistoryHeroImage.jsx';
 
 function JudoHistory() {
 
   return (
     <>
-      <HeroImage/>
+      <JudoHistoryHeroImage/>
       <div className='fansPageContainer'>
         <div>
           <h2>Judo History</h2>
