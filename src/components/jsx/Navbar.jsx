@@ -58,13 +58,13 @@ function Navbar() {
             <a className="dropdown-toggle">Who are we?</a>
             {dropdownOpen === "who-are-we" && (
               <ul className="dropdown-menu">
-                <li>
+                <li onClick={() => setIsOpen(false)}>
                   <NavLink to="/kjf-history">KJF History</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setIsOpen(false)}>
                   <NavLink to="/judo-history">Judo History</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setIsOpen(false)}>
                   <NavLink to="/leadership">Our Leadership</NavLink>
                 </li>
               </ul>

@@ -45,4 +45,12 @@
     margin-left: 25px;
     font-weight: normal;
   }
+
+  .HeroImageDescription {
+    display: none;
+  }
+
+  .HeroImage p {
+    color: black;
+  }
 }
