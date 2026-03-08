@@ -65,13 +65,6 @@ function Navbar() {
                   <NavLink to="/judo-history">Judo History</NavLink>
                 </li>
                 <li onClick={() => setIsOpen(false)}>
-                <li>
-                  <NavLink to="/kjf-history">KJF History</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/judo-history">Judo History</NavLink>
-                </li>
-                <li>
                   <NavLink to="/leadership">Our Leadership</NavLink>
                 </li>
               </ul>
